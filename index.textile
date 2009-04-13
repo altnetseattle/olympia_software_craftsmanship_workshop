@@ -59,10 +59,8 @@ The principles we want to focus on are:
 h2. First Cut
 
 We're going to do a first cut just building a plain old ASP.NET web forms 
-application.
-
-We'll think about the first scenario in the stories, not considering the second
-story.
+application. We'll think about the first scenario in the stories, not considering 
+the second story.
 
 We'll create a web form with a "master detail view":http://designingwebinterfaces.com/designing-web-interfaces-12-screen-patterns, 
 add a data source control, wire it with SQL in properties and all.
@@ -96,6 +94,9 @@ We'll build another feature from scratch using TDD. We'll write the tests for
 the code we wished we had then implement the feature.
 
 h2. Other Practices
+
+To wrap up, we'll touch on some other practices that make everything work better:
+
  * One-Step Builds
  * Continuous Integration
    - TeamCity
