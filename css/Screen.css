@@ -1,0 +1,115 @@
+﻿/* CSS layout */
+body {
+    margin: 1em;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: #8085C1;
+}
+
+h1 {
+    font-style:italic;
+    color: #333333;
+    font-size:28pt;
+}
+
+#masthead {
+    min-width: 600px;
+    min-height: 200px;
+}
+
+#logo {
+    float: left;
+    width: 300px;
+}
+
+#header {
+    margin-left: 300px;
+}
+
+#container {
+   clear: both;
+   float: left;
+   width: 750px;
+}
+
+#left_col {
+    float: left;
+    width: 300px;
+}
+
+#page_content {
+    margin-left: 300px;
+}
+
+#footer {
+    margin-top: 3em;
+    border-top: thin #333333 solid;
+    clear: both;
+    margin-left: 300px;
+}
+
+#right-sidebar {
+    float: left;
+    width: 240px;
+    text-align: right;
+}
+
+/* TODO: Fix it so the rss image isn't so lame looking */
+a img {
+    text-decoration: none;
+}
+
+.contact {
+    font-size: smaller;
+    color: gray;
+    line-height: 1.5em;
+    float: left;
+    margin-right: 3em;
+}
+
+/*
+**	org-mode styles
+*/
+.todo  { 
+    color: red; 
+}
+
+.done { 
+    color: green; 
+}
+
+.timestamp { 
+    color: gray;
+}
+
+.timestamp-kwd { 
+    color: CadetBlue;
+}
+
+.tag { 
+    background-color:lightblue; 
+    font-weight:normal;
+}
+
+.target { 
+    background-color: lavender; 
+}
+
+pre {
+    border: 1pt solid #AEBDCC;
+    background-color: #F3F5F7;
+    padding: 5pt;
+    font-family: courier, monospace;
+}
+
+table { 
+    border-collapse: collapse; 
+}
+
+td, th {
+    vertical-align: top;
+    <!--border: 1pt solid #ADB9CC;-->
+}
