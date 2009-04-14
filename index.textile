@@ -93,7 +93,7 @@ h2. TDD
 We'll build another feature from scratch using TDD. We'll write the tests for
 the code we wished we had then implement the feature.
 
-h2. Other Practices
+h2. Other Practices and Tools
 
 To wrap up, we'll touch on some other practices that make everything work better:
 
