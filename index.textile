@@ -75,7 +75,7 @@ each approach.
 h2. Refactoring
 
 We'll use the safe refactorings outlined in "Michael Feathers":http://www.amazon.com/gp/product/0131177052/ref=s9_sims_c2_s1_p14_i2?pf_rd_m=ATVPDKIKX0DER&pf_rd_s=center-2&pf_rd_r=0S8D0VHK1WGVWC6Q21Q7&pf_rd_t=101&pf_rd_p=470938631&pf_rd_i=507846
-book to build seems and make the code we have so far testable.
+book to build seams and make the code we have so far testable.
 
 First, we'll pull the data access code out of the ASPX page and into a service.
 We'll have the code behind be responsible for creating the service and satisfying
