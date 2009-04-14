@@ -1,0 +1,99 @@
+h1. Olympia Software Craftsmanship Workshop
+
+Saturday, June 6th, 2009, 10am-4pm
+"[Location TBD]":http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=olympia,+wa&ie=UTF8&z=12&iwloc=A, Olympia, WA
+
+h2. Overview
+
+The Olympia Software Craftsmanship Workshop is a free, one day workshop,
+developed with the intention of increasing the level of awareness of practices
+and skills that can improve our software.
+
+Any developer interested in improving and learning new skills is welcome.
+
+We're going to focus on a scenario for a feature a customer wants. We'll do it
+first using classic ASP.NET techniques. We'll show how it's difficult to maintain,
+extend, and test.
+
+Next, we'll use the techniques to componentize business functionality, extracting
+it from the code behind in the ASP.NET project. 
+
+We'll then add a new feature to the application, using our tests to make sure
+nothing has been broken in the process.
+
+We'll finish off by going over some other tools and techniques that can augment
+what we've discussed.
+
+h2. User Stories
+
+The theme we're going to concentrate on is...TBD
+
+ _ideas_ _please_
+
+p[color:gray]. NOTE: I have started a little sample app I used for my spark view engine
+presentation. It's based on my vast 3 months of experience in the mortgage
+servicing industry. I kind of understand enough about that industry to make
+decent stories. Problem is:
+* Not sure if this is something that would connect with the audience
+* We're realistically only going to have time for about two stories anyway,
+  so is it worth it to spend about 10 minutes introducing this niche domain?
+
+p[color:gray]. I'd really like to have some kind of government example, like something from
+L&I or something.
+
+h2. Principles
+
+The principles we want to focus on are:
+
+* Using User Stories and TDD to focus on real customer value
+* Refactoring legacy code to make it testable *before* adding new features
+* "S.O.L.I.D.":http://blog.objectmentor.com/articles/2009/02/12/getting-a-solid-start
+* "INVEST":http://xp123.com/xplor/xp0308/index.shtml
+* "Individuals and interactions over processes and tools":http://agilemanifesto.org/
+
+h2. First Cut
+
+We're going to do a first cut just building a plain old ASP.NET web forms 
+application. We'll think about the first scenario in the stories, not considering 
+the second story.
+
+We'll create a web form with a "master detail view":http://designingwebinterfaces.com/designing-web-interfaces-12-screen-patterns, 
+add a data source control, wire it with SQL in properties and all.
+
+Next we'll look at adding the second scenario and show how it's difficult with
+the poor design we've slapped together.
+
+We'll consider things like extracting the SQL into a stored procedure and other
+steps we might take to get this under control, and discuss the pros and cons of
+each approach.
+
+h2. Refactoring
+
+We'll use the safe refactorings outlined in "Michael Feathers":http://www.amazon.com/gp/product/0131177052/ref=s9_sims_c2_s1_p14_i2?pf_rd_m=ATVPDKIKX0DER&pf_rd_s=center-2&pf_rd_r=0S8D0VHK1WGVWC6Q21Q7&pf_rd_t=101&pf_rd_p=470938631&pf_rd_i=507846
+book to build seems and make the code we have so far testable.
+
+First, we'll pull the data access code out of the ASPX page and into a service.
+We'll have the code behind be responsible for creating the service and satisfying
+any dependencies it has.
+
+Next we'll discuss what's wrong with having the code behind be responsible
+for creating the service and we'll look at some things we could do the address
+those issues.
+
+Once we have tests around the existing application - at least the part we are 
+working on - we can move onto the next feature.
+
+h2. TDD
+
+We'll build another feature from scratch using TDD. We'll write the tests for
+the code we wished we had then implement the feature.
+
+h2. Other Practices
+
+To wrap up, we'll touch on some other practices that make everything work better:
+
+ * One-Step Builds
+ * Continuous Integration
+   - TeamCity
+   - Hudson
+ * Agile Estimation
