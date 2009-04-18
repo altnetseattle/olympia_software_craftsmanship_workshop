@@ -34,7 +34,7 @@ p. Let's use this theme any way that's useful. Consider it open-source. By build
 
 h3. Our Customer:
 
-p. Able Probe, Inc.
+h4. Able Probe, Inc.
 
 p. In generic terms, a company that provides incident report recording and analysis services, on a contractual basis, to a state government. Incidents are reported by citizens of the state. In specific terms, a private company contracted by the State governments to track citizen reports of UFO incidents, and report on trends and the credibly worrisome. (In this fictional world, UFO sightings and contacts with ET’s are as common and nearly as mundane a nuisance as neighbors with barking dogs or sofas in front yards, etc).
 
@@ -44,7 +44,7 @@ p. Tech culture: Oldest employees are accustomed to “green-screen” applicati
 
 h3. Our Customer’s Customer:
 
-p. Pacifica State Department of Extra-Terrestrial Tracking & Response or “DETTR”
+h4. Pacifica State Department of Extra-Terrestrial Tracking & Response or “DETTR”
 
 h3. Our Mission:
 
@@ -56,9 +56,10 @@ p. AbleProbe is in trouble, because they currently use their old application, th
 
 h3. Requirements
 
-p. User Profiles:
+h4. User Profiles:
 
 * Incident Recorder (IR): Basic operator of the system, focused on recording citizen reports delivered by a variety of methods (primarily text messages and emails, but also text records of phone calls recorded by other staff)
+p. 
 
 h4. User Stories and Acceptance Criteria
 
