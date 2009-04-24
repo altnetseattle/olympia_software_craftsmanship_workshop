@@ -26,20 +26,58 @@ what we've discussed.
 
 h2. User Stories
 
-The theme we're going to concentrate on is...TBD
+p. To support this workshop, (and other activities and events), we’ve decide to create a fictional customer, in a (mostly) fictional world. The fictional customer company will have employees, clients, a website, products, services, an attitude, etc. As we flesh it out, it can provide endless possibilities in terms of realistic examples.
 
- _ideas_ _please_
+p. While we do need realistic examples in terms of specific functional requirements, we do not want to be bored either, so humor is allowed and encouraged. (No real names should or will be used, to keep any real person or organization taking offense).
 
-p[color:gray]. NOTE: I have started a little sample app I used for my spark view engine
-presentation. It's based on my vast 3 months of experience in the mortgage
-servicing industry. I kind of understand enough about that industry to make
-decent stories. Problem is:
-* Not sure if this is something that would connect with the audience
-* We're realistically only going to have time for about two stories anyway,
-  so is it worth it to spend about 10 minutes introducing this niche domain?
+p. Let's use this theme any way that's useful. Consider it open-source. By building out more of the fictional world around the theme, we can apply it to all kinds of exercises. With a little planning, we can logically connect the exercises whether by parallels or by contrasts.
 
-p[color:gray]. I'd really like to have some kind of government example, like something from
-L&I or something.
+h3. Our Customer:
+
+h4. Able Probe, Inc.
+
+p. In generic terms, a company that provides incident report recording and analysis services, on a contractual basis, to a state government. Incidents are reported by citizens of the state. In specific terms, a private company contracted by the State governments to track citizen reports of UFO incidents, and report on trends and the credibly worrisome. (In this fictional world, UFO sightings and contacts with ET’s are as common and nearly as mundane a nuisance as neighbors with barking dogs or sofas in front yards, etc).
+
+p. Company culture: is inconsistent and evolving: Mixture of ex-military people in more senior positions, who are gradually being back-filled by Web-centric types. Majority of staff are data-entry people or so-called knowledge workers. They mostly enter data and run queries and reports. Some in-house techies, but no one capable of building a new solution.
+
+p. Tech culture: Oldest employees are accustomed to “green-screen” applications running on their old IBM AS/400 mini.  Newer employees and management are Web-savvy, and are demanding a fundamental technology change, partly for personal reasons, but also to respond better to the States’ new functional requirements.
+
+h3. Our Customer’s Customer:
+
+h4. Pacifica State Department of Extra-Terrestrial Tracking & Response or “DETTR”
+
+h3. Our Mission:
+
+p. Help AbleProbe respond to new demands from its largest customer, DETTR.
+
+p. DETTR has been publically promoting the use of text messaging and email as a way for citizens to report UFO sightings (or more direct, usually unpleasant contacts). DETTR is trying to minimize pressure on their 1-800 phone service. They want AbleProbe to provide much more efficient incident recording and reporting services via real-time handling of incoming text messages and email.
+
+p. AbleProbe is in trouble, because they currently use their old application, the State UFO Reporting System (SUFORS). The people who wrote SUFORS are long gone, and fixing it wouldn’t really deal with the fundamental needs of DETTR anyway. They know they have to contract us to design and build new a Web-centric app.
+
+h3. Requirements
+
+h4. User Profiles:
+
+* Incident Recorder (IR): Basic operator of the system, focused on recording citizen reports delivered by a variety of methods (primarily text messages and emails, but also text records of phone calls recorded by other staff)
+p. 
+
+h4. User Stories and Acceptance Criteria
+
+* As an IR, I want to be able to easily view my backlog of incoming, yet unrecorded citizen reports so I know exactly what needs to be worked on.
+
+** When there are incoming reports, I can see them in my backlog.
+
+** When there are incoming reports that have already been recorded, I can no longer see them in my backlog.
+
+* As an IR, I want to be able to link an incoming report (regardless of how it was submitted) to a citizen, if that citizen has previously submitted a report, so I can avoid redundant data entry.
+
+** When I am working on an incoming report, I can select an existing citizen
+
+* As an IR, I want to be able to auto-populate as much of the report form as possible, directly from a citizen submittal, so I can minimize my data entry.
+
+* As an IR, I want to be able to view a citizen's historical reports by selecting a citizen anywhere a citizen appears within the application, so I can understand any trends, their reporting frequency, date of last report, etc.
+
+* As an IR, I want to be able to flag a citizen for tracking, the flag indicating the concern: "loon", "paranoid", "anti-gov't paranoid loon", etc.
 
 h2. Principles
 
