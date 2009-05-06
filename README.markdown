@@ -1,9 +1,9 @@
-h1. Olympia Software Craftsmanship Workshop
+# Olympia Software Craftsmanship Workshop
 
 Saturday, June 6th, 2009, 10am-4pm
 "[Olympia Center]":http://maps.google.com/maps?li=d&hl=en&f=d&iwstate1=dir:to&daddr=222+Columbia+St,+Olympia,+WA+98501+(Olympia+Center+The)&geocode=CYL6SiKf9Yb9FbbezQId_6es-A&iwloc=1&dq=olympia+center,+olympia,+wa&cid=47046326,-122902529,5486535540606097847&ei=vDbxSZCvO4nkiwOHi6CRBw
 
-h2. Overview
+## Overview
 
 The Olympia Software Craftsmanship Workshop is one day workshop,
 developed with the intention of increasing the level of awareness of practices
@@ -24,44 +24,43 @@ nothing has been broken in the process.
 We'll finish off by going over some other tools and techniques that can augment
 what we've discussed.
 
-h2. User Stories
+## User Stories
 
-p. To support this workshop, (and other activities and events), we’ve decide to create a fictional customer, in a (mostly) fictional world. The fictional customer company will have employees, clients, a website, products, services, an attitude, etc. As we flesh it out, it can provide endless possibilities in terms of realistic examples.
+To support this workshop, (and other activities and events), we’ve decide to create a fictional customer, in a (mostly) fictional world. The fictional customer company will have employees, clients, a website, products, services, an attitude, etc. As we flesh it out, it can provide endless possibilities in terms of realistic examples.
 
-p. While we do need realistic examples in terms of specific functional requirements, we do not want to be bored either, so humor is allowed and encouraged. (No real names should or will be used, to keep any real person or organization taking offense).
+While we do need realistic examples in terms of specific functional requirements, we do not want to be bored either, so humor is allowed and encouraged. (No real names should or will be used, to keep any real person or organization taking offense).
 
-p. Let's use this theme any way that's useful. Consider it open-source. By building out more of the fictional world around the theme, we can apply it to all kinds of exercises. With a little planning, we can logically connect the exercises whether by parallels or by contrasts.
+Let's use this theme any way that's useful. Consider it open-source. By building out more of the fictional world around the theme, we can apply it to all kinds of exercises. With a little planning, we can logically connect the exercises whether by parallels or by contrasts.
 
-h3. Our Customer:
+### Our Customer:
 
-h4. Able Probe, Inc.
+#### Able Probe, Inc.
 
-p. In generic terms, a company that provides incident report recording and analysis services, on a contractual basis, to a state government. Incidents are reported by citizens of the state. In specific terms, a private company contracted by the State governments to track citizen reports of UFO incidents, and report on trends and the credibly worrisome. (In this fictional world, UFO sightings and contacts with ET’s are as common and nearly as mundane a nuisance as neighbors with barking dogs or sofas in front yards, etc).
+In generic terms, a company that provides incident report recording and analysis services, on a contractual basis, to a state government. Incidents are reported by citizens of the state. In specific terms, a private company contracted by the State governments to track citizen reports of UFO incidents, and report on trends and the credibly worrisome. (In this fictional world, UFO sightings and contacts with ET’s are as common and nearly as mundane a nuisance as neighbors with barking dogs or sofas in front yards, etc).
 
-p. Company culture: is inconsistent and evolving: Mixture of ex-military people in more senior positions, who are gradually being back-filled by Web-centric types. Majority of staff are data-entry people or so-called knowledge workers. They mostly enter data and run queries and reports. Some in-house techies, but no one capable of building a new solution.
+Company culture: is inconsistent and evolving: Mixture of ex-military people in more senior positions, who are gradually being back-filled by Web-centric types. Majority of staff are data-entry people or so-called knowledge workers. They mostly enter data and run queries and reports. Some in-house techies, but no one capable of building a new solution.
 
-p. Tech culture: Oldest employees are accustomed to “green-screen” applications running on their old IBM AS/400 mini.  Newer employees and management are Web-savvy, and are demanding a fundamental technology change, partly for personal reasons, but also to respond better to the States’ new functional requirements.
+Tech culture: Oldest employees are accustomed to “green-screen” applications running on their old IBM AS/400 mini.  Newer employees and management are Web-savvy, and are demanding a fundamental technology change, partly for personal reasons, but also to respond better to the States’ new functional requirements.
 
-h3. Our Customer’s Customer:
+### Our Customer’s Customer:
 
-h4. Pacifica State Department of Extra-Terrestrial Tracking & Response or “DETTR”
+#### Pacifica State Department of Extra-Terrestrial Tracking & Response or “DETTR”
 
-h3. Our Mission:
+### Our Mission:
 
-p. Help AbleProbe respond to new demands from its largest customer, DETTR.
+Help AbleProbe respond to new demands from its largest customer, DETTR.
 
-p. DETTR has been publically promoting the use of text messaging and email as a way for citizens to report UFO sightings (or more direct, usually unpleasant contacts). DETTR is trying to minimize pressure on their 1-800 phone service. They want AbleProbe to provide much more efficient incident recording and reporting services via real-time handling of incoming text messages and email.
+DETTR has been publically promoting the use of text messaging and email as a way for citizens to report UFO sightings (or more direct, usually unpleasant contacts). DETTR is trying to minimize pressure on their 1-800 phone service. They want AbleProbe to provide much more efficient incident recording and reporting services via real-time handling of incoming text messages and email.
 
-p. AbleProbe is in trouble, because they currently use their old application, the State UFO Reporting System (SUFORS). The people who wrote SUFORS are long gone, and fixing it wouldn’t really deal with the fundamental needs of DETTR anyway. They know they have to contract us to design and build new a Web-centric app.
+AbleProbe is in trouble, because they currently use their old application, the State UFO Reporting System (SUFORS). The people who wrote SUFORS are long gone, and fixing it wouldn’t really deal with the fundamental needs of DETTR anyway. They know they have to contract us to design and build new a Web-centric app.
 
-h3. Requirements
+### Requirements
 
-h4. User Profiles:
+#### User Profiles:
 
 * Incident Recorder (IR): Basic operator of the system, focused on recording citizen reports delivered by a variety of methods (primarily text messages and emails, but also text records of phone calls recorded by other staff)
-p. 
 
-h4. User Stories and Acceptance Criteria
+#### User Stories and Acceptance Criteria
 
 * As an IR, I want to be able to easily view my backlog of incoming, yet unrecorded citizen reports so I know exactly what needs to be worked on.
 
@@ -79,7 +78,7 @@ h4. User Stories and Acceptance Criteria
 
 * As an IR, I want to be able to flag a citizen for tracking, the flag indicating the concern: "loon", "paranoid", "anti-gov't paranoid loon", etc.
 
-h2. Principles
+## Principles
 
 The principles we want to focus on are:
 
@@ -89,7 +88,7 @@ The principles we want to focus on are:
 * "INVEST":http://xp123.com/xplor/xp0308/index.shtml
 * "Individuals and interactions over processes and tools":http://agilemanifesto.org/
 
-h2. First Cut
+## First Cut
 
 We're going to do a first cut just building a plain old ASP.NET web forms 
 application. We'll think about the first scenario in the stories, not considering 
@@ -105,7 +104,7 @@ We'll consider things like extracting the SQL into a stored procedure and other
 steps we might take to get this under control, and discuss the pros and cons of
 each approach.
 
-h2. Refactoring
+## Refactoring
 
 We'll use the safe refactorings outlined in "Michael Feathers":http://www.amazon.com/gp/product/0131177052/ref=s9_sims_c2_s1_p14_i2?pf_rd_m=ATVPDKIKX0DER&pf_rd_s=center-2&pf_rd_r=0S8D0VHK1WGVWC6Q21Q7&pf_rd_t=101&pf_rd_p=470938631&pf_rd_i=507846
 book to build seems and make the code we have so far testable.
@@ -121,12 +120,12 @@ those issues.
 Once we have tests around the existing application - at least the part we are 
 working on - we can move onto the next feature.
 
-h2. TDD
+## TDD
 
 We'll build another feature from scratch using TDD. We'll write the tests for
 the code we wished we had then implement the feature.
 
-h2. Other Practices
+## Other Practices
 
 To wrap up, we'll touch on some other practices that make everything work better:
 
