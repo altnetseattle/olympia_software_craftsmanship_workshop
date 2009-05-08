@@ -1,7 +1,7 @@
 # Olympia Software Craftsmanship Workshop
 
 Saturday, June 6th, 2009, 10am-4pm
-[Olympia Center](http://maps.google.com/maps?li=d&hl=en&f=d&iwstate1=dir:to&daddr=222+Columbia+St,+Olympia,+WA+98501+(Olympia+Center+The)&geocode=CYL6SiKf9Yb9FbbezQId_6es-A&iwloc=1&dq=olympia+center,+olympia,+wa&cid=47046326,-122902529,5486535540606097847&ei=vDbxSZCvO4nkiwOHi6CRBw)
+[Olympia Center](http://is.gd/xBUr)
 
 ## Overview
 
