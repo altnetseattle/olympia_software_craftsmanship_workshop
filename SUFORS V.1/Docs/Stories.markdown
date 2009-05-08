@@ -29,14 +29,11 @@ AbleProbe is in trouble, because they currently use their old application, the S
 ## User Stories and Acceptance Criteria
 
 * As an IR, I want to be able to easily view my backlog of incoming, yet unrecorded citizen reports so I know exactly what needs to be worked on.
-
-** When there are incoming reports, I can see them in my backlog.
-
-** When there are incoming reports that have already been recorded, I can no longer see them in my backlog.
+  - When there are incoming reports, I can see them in my backlog.
+  - When there are incoming reports that have already been recorded, I can no longer see them in my backlog.
 
 * As an IR, I want to be able to link an incoming report (regardless of how it was submitted) to a citizen, if that citizen has previously submitted a report, so I can avoid redundant data entry.
-
-** When I am working on an incoming report, I can select an existing citizen
+  - When I am working on an incoming report, I can select an existing citizen
 
 * As an IR, I want to be able to auto-populate as much of the report form as possible, directly from a citizen submittal, so I can minimize my data entry.
 
