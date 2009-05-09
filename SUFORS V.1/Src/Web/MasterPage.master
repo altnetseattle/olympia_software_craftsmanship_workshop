@@ -1,19 +1,59 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+﻿<%@ Register TagPrefix="uc" TagName="MainMenu" Src="~/UserControls/MainMenu.ascx" %>
+<%@ Register TagPrefix="uc" TagName="UserInfoBar" Src="~/UserControls/UserInfoBar.ascx" %>
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <asp:ContentPlaceHolder id="_head" runat="server">
-    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="_head" runat="server" />
+    <link href="/Web/Styles/style.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
     <form id="_form" runat="server">
-    <div>
-        <asp:ContentPlaceHolder id="_contentPlaceHolder" runat="server">
-        
-        </asp:ContentPlaceHolder>
+    <div id="page" align="center">
+        <div id="toppage" align="center">
+            <div id="date">
+                <div class="smalltext" style="padding: 13px;">
+                    <strong><asp:Label ID="_dateLabel" runat="server" /></strong></div>
+            </div>
+            <div id="topbar">
+                <div align="right" style="padding: 12px;" class="smallwhitetext">
+                    <uc:UserInfoBar ID="_userInfoBar" runat="server" />
+                </div>
+            </div>
+        </div>
+        <div id="header" align="center">
+            <div class="titletext" id="logo">
+                <div class="logotext" style="margin: 30px">
+                    SUFORS</div>
+            </div>
+            <div id="pagetitle">
+                <div id="title" class="titletext" align="right">
+                    Welcome to SUFORS</div>
+            </div>
+        </div>
+        <div id="content" align="center">
+            <div id="menu" align="right">
+                <div align="right" style="width: 189px; height: 8px;">
+                    <img src="images/mnu_topshadow.gif" width="189" height="8" alt="mnutopshadow" /></div>
+                <div id="linksmenu" align="center">
+                    <asp:ContentPlaceHolder ID="_menuPlaceHolder" runat="server"/>
+                </div>
+                <div align="right" style="width: 189px; height: 8px;">
+                    <img src="images/mnu_bottomshadow.gif" width="189" height="8" alt="mnubottomshadow" />
+                </div>
+            </div>
+            <div id="contenttext">
+                <asp:ContentPlaceHolder ID="_contentPlaceHolder" runat="server"/>
+            </div>
+        </div>
+        <div id="footer" class="smallgraytext" align="center">
+            <a href="#">Home</a> | <a href="#">About Us</a> | <a href="#">Products</a> | <a href="#">
+                Our Services</a> | <a href="#">Contact Us</a><br />
+            Your Company Name &copy; 2007<br />
+            <a href="http://www.winkhosting.com" title="Hosting Colombia">Hosting Colombia</a><br />
+        </div>
     </div>
     </form>
 </body>
