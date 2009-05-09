@@ -2,6 +2,9 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="_head" Runat="Server">
 </asp:Content>
+<asp:Content ID="menuContent" ContentPlaceHolderID="_menuPlaceHolder" runat="server">
+    <a href="CitizenList.aspx">Citizen List</a>
+</asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="_contentPlaceHolder" Runat="Server">
 <div class="bodytext" style="padding: 12px;" align="justify">
     <strong>Hi! This is my second design for OSWD, with CSS and XHTML 1.0 Transitional Validation.
