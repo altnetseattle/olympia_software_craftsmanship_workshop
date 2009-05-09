@@ -7,7 +7,6 @@ public partial class CitizenList : Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        _homeLink.Command += PageCommand;
         _newLink.Command += PageCommand;
     }
 
@@ -16,6 +15,7 @@ public partial class CitizenList : Page
         var grid = e.CommandSource as GridView;
         int rowIndex = int.Parse(e.CommandArgument.ToString());
         var id = (int) grid.DataKeys[rowIndex]["Id"];
+
         switch (e.CommandName)
         {
             case "Select":
@@ -28,11 +28,10 @@ public partial class CitizenList : Page
     {
         switch (e.CommandName)
         {
-            case "Home":
-                SiteNavigationHelper.NavigateToHome();
-                break;
             case "New":
                 CitizenHelper.NaviateToNewCitizen();
+                break;
+            case "Cancel":
                 break;
         }
     }

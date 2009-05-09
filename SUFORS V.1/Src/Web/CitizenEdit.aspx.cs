@@ -22,9 +22,6 @@ public partial class CitizenEdit : Page
                     break;
             }
 
-            _insertButton.Command += PageCommand;
-            _updateButton.Command += PageCommand;
-            _cancelButton.Command += PageCommand;
 
             _insertButton.Visible = _citizenFormView.CurrentMode == FormViewMode.Insert;
             _updateButton.Visible = _citizenFormView.CurrentMode == FormViewMode.Edit;
@@ -36,14 +33,16 @@ public partial class CitizenEdit : Page
         switch (e.CommandName)
         {
             case "Insert":
-
+                _citizenFormView.InsertItem(false);
                 break;
             case "Update":
-
+                _citizenFormView.UpdateItem(false);
                 break;
             case "Cancel":
-                SiteNavigationHelper.NavigateToReturnPage();
+                
                 break;
         }
+
+        SiteNavigationHelper.NavigateToReturnPage();
     }
 }

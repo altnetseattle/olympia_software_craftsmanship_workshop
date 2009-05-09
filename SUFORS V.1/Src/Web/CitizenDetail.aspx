@@ -4,6 +4,13 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="_head" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="_menuPlaceHolder" runat="Server">
+    <a href="Default.aspx">Home</a>
+    <asp:LinkButton ID="_editButton" runat="server" CausesValidation="True" 
+        CommandName="Edit" Text="Edit Citizen" OnCommand="PageCommand" />
+    <asp:LinkButton ID="_addReportButton" runat="server" CausesValidation="True" 
+        CommandName="Add" Text="Add Report" OnCommand="PageCommand" />
+    <asp:LinkButton ID="_cancelButton" runat="server" 
+        CausesValidation="False" CommandName="Cancel" Text="Cancel" OnCommand="PageCommand" />    
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="_contentPlaceHolder" runat="Server">
     <asp:DetailsView ID="_citizenDetailsView" runat="server" AutoGenerateRows="False"
