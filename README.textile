@@ -34,7 +34,7 @@ p. Let's use this theme any way that's useful. Consider it open-source. By build
 
 h3. Our Customer:
 
-h4. Able Probe, Inc.
+h4. "Able Probe, Inc.":http://ableprobe.com
 
 p. In generic terms, a company that provides incident report recording and analysis services, on a contractual basis, to a state government. Incidents are reported by citizens of the state. In specific terms, a private company contracted by the State governments to track citizen reports of UFO incidents, and report on trends and the credibly worrisome. (In this fictional world, UFO sightings and contacts with ET’s are as common and nearly as mundane a nuisance as neighbors with barking dogs or sofas in front yards, etc).
 
@@ -48,11 +48,11 @@ h4. Pacifica State Department of Extra-Terrestrial Tracking & Response or “DET
 
 h3. Our Mission:
 
-p. Help AbleProbe respond to new demands from its largest customer, DETTR.
+p. Help Able Probe respond to new demands from its largest customer, DETTR.
 
-p. DETTR has been publically promoting the use of text messaging and email as a way for citizens to report UFO sightings (or more direct, usually unpleasant contacts). DETTR is trying to minimize pressure on their 1-800 phone service. They want AbleProbe to provide much more efficient incident recording and reporting services via real-time handling of incoming text messages and email.
+p. DETTR has been publically promoting the use of text messaging and email as a way for citizens to report UFO sightings (or more direct, usually unpleasant contacts). DETTR is trying to minimize pressure on their 1-800 phone service. They want Able Probe to provide much more efficient incident recording and reporting services via real-time handling of incoming text messages and email.
 
-p. AbleProbe is in trouble, because they currently use their old application, the State UFO Reporting System (SUFORS). The people who wrote SUFORS are long gone, and fixing it wouldn’t really deal with the fundamental needs of DETTR anyway. They know they have to contract us to design and build new a Web-centric app.
+p. Able Probe is in trouble, because they currently use their old application, the State UFO Reporting System (SUFORS). The people who wrote SUFORS are long gone, and fixing it wouldn’t really deal with the fundamental needs of DETTR anyway. They know they have to contract us to design and build new a Web-centric app.
 
 h3. Requirements
 
