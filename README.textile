@@ -63,19 +63,25 @@ p.
 
 h4. User Stories and Acceptance Criteria
 
-* As an IR, I want to be able to easily view my backlog of incoming, yet unrecorded citizen reports so I know exactly what needs to be worked on.
+Entity Model for Citizen Messaging
+* Citizens send Messages
+* IR's review Messages
+* IR's create Incident Records
 
-** When there are incoming reports, I can see them in my backlog.
+User Stories
+* As an IR, I want to be able to easily view my backlog of incoming, yet unrecorded citizen messages so I know exactly what needs to be worked on.
 
-** When there are incoming reports that have already been recorded, I can no longer see them in my backlog.
+** When there are incoming messages, I can see them in my message backlog.
 
-* As an IR, I want to be able to link an incoming report (regardless of how it was submitted) to a citizen, if that citizen has previously submitted a report, so I can avoid redundant data entry.
+** When there are messages that have already been recorded, I can no longer see them in my message backlog.
 
-** When I am working on an incoming report, I can select an existing citizen
+* As an IR, I want to be able to link an incoming message(regardless of how it was submitted) to a citizen, if that citizen has previously sent a message, so I can avoid redundant data entry.
 
-* As an IR, I want to be able to auto-populate as much of the report form as possible, directly from a citizen submittal, so I can minimize my data entry.
+** When I am working on an incoming message, I can select an existing citizen
 
-* As an IR, I want to be able to view a citizen's historical reports by selecting a citizen anywhere a citizen appears within the application, so I can understand any trends, their reporting frequency, date of last report, etc.
+* As an IR, I want to be able to auto-populate as much of the incident record form as possible, directly from a citizen message, so I can minimize my data entry.
+
+* As an IR, I want to be able to view a citizen's historical incident records by selecting a citizen anywhere a citizen appears within the application, so I can understand any trends, their reporting frequency, date of last report, etc.
 
 * As an IR, I want to be able to flag a citizen for tracking, the flag indicating the concern: "loon", "paranoid", "anti-gov't paranoid loon", etc.
 
