@@ -57,6 +57,7 @@ p. Able Probe is in trouble, because they currently use their old application, t
 h3. Requirements
 
 h4. Customer Interview
+
 p. With permission of Able Probe's CEO, Seth Drawlings, we had our product manager interview several of Able Probe's account managers who know the existing SUFORS processes and work-flows best. It was clear that they want us to primarily address improvements to the way Able Probe staff use SUFORS to handle citizen messages coming in by email and IM. Currently staff process text files manually entered by contract staff who transcribe voice mail messages left on the State's UFO reporting line. The State is asking Able Probe to improve the software and processes so that Able Probe staff can rapidly process text from incoming emails and IM messages.
 
 p. Entity Model from interviews
@@ -105,7 +106,6 @@ h4. User Profiles:
 
 h4. User Stories and Acceptance Criteria
 
-User Stories
 * As an IR, I want to be able to easily view my backlog of incoming, yet unrecorded citizen messages so I know exactly what needs to be worked on.
 ** When there are incoming messages, I can see them in my message backlog.
 ** When there are messages that have already been recorded, I can no longer see them in my message backlog.
