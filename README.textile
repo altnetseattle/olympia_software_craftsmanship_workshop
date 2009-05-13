@@ -50,39 +50,69 @@ h3. Our Mission:
 
 p. Help Able Probe respond to new demands from its largest customer, DETTR.
 
-p. DETTR has been publically promoting the use of text messaging and email as a way for citizens to report UFO sightings (or more direct, usually unpleasant contacts). DETTR is trying to minimize pressure on their 1-800 phone service. They want Able Probe to provide much more efficient incident recording and reporting services via real-time handling of incoming text messages and email.
+p. DETTR has been publicly promoting the use of text messaging and email as a way for citizens to report UFO sightings (or more direct, usually unpleasant contacts). DETTR is trying to minimize pressure on their 1-800 phone service. They want Able Probe to provide much more efficient incident recording and reporting services via real-time handling of incoming text messages and email.
 
 p. Able Probe is in trouble, because they currently use their old application, the State UFO Reporting System (SUFORS). The people who wrote SUFORS are long gone, and fixing it wouldn’t really deal with the fundamental needs of DETTR anyway. They know they have to contract us to design and build new a Web-centric app.
 
 h3. Requirements
 
-h4. User Profiles:
+h4. Customer Interview
+p. With permission of Able Probe's CEO, Seth Drawlings, we had our product manager interview several of Able Probe's account managers who know the existing SUFORS processes and work-flows best. It was clear that they want us to primarily address improvements to the way Able Probe staff use SUFORS to handle citizen messages coming in by email and IM. Currently staff process text files manually entered by contract staff who transcribe voice mail messages left on the State's UFO reporting line. The State is asking Able Probe to improve the software and processes so that Able Probe staff can rapidly process text from incoming emails and IM messages.
 
-* Incident Recorder (IR): Basic operator of the system, focused on recording citizen reports delivered by a variety of methods (primarily text messages and emails, but also text records of phone calls recorded by other staff)
-p. 
-
-h4. User Stories and Acceptance Criteria
-
-Entity Model for Citizen Messaging
+p. Entity Model from interviews
 * Citizens send Messages
 * IR's review Messages
 * IR's create Incident Records
 
+* Citizen
+** State of Residence
+** State ID Number
+** First Name
+** Middle Initial (optional)
+** Last Name
+** Primary Phone Number
+** Primary Email Address
+** Tracking Flag (defaults to null) List: “loon”, “paranoid”, “anti-gov’t paranoid loon”, "credible source", etc.
+	
+* Message
+** ID
+** Date-Time Stamp (UTC)
+** Header
+** Content
+** From
+** Originating IP
+
+* User
+** SUFORS ID
+** Primary Role (e.g. "Incident Recorder")
+** First Name
+** Middle Initial (optional)
+** Last Name
+** User Name
+** Password (Encrypted)
+
+* Incident Record
+** ID
+** Date-Time Stamp (UTC)	
+** Message ID
+** Recorder ID
+** Recorder Comments
+** Follow-up Flag (defaults to null) List: “ignore”, “curious”, "worrisome", “urgent”, "crisis"
+
+h4. User Profiles:
+
+* Incident Recorder (IR): Basic operator of the system, focused on reviewing citizen messages delivered by a variety of methods (primarily text messages and emails, but also text records of phone calls recorded by other staff), and recording them in SUFORS as "incident records".
+
+h4. User Stories and Acceptance Criteria
+
 User Stories
 * As an IR, I want to be able to easily view my backlog of incoming, yet unrecorded citizen messages so I know exactly what needs to be worked on.
-
 ** When there are incoming messages, I can see them in my message backlog.
-
 ** When there are messages that have already been recorded, I can no longer see them in my message backlog.
-
 * As an IR, I want to be able to link an incoming message(regardless of how it was submitted) to a citizen, if that citizen has previously sent a message, so I can avoid redundant data entry.
-
 ** When I am working on an incoming message, I can select an existing citizen
-
 * As an IR, I want to be able to auto-populate as much of the incident record form as possible, directly from a citizen message, so I can minimize my data entry.
-
 * As an IR, I want to be able to view a citizen's historical incident records by selecting a citizen anywhere a citizen appears within the application, so I can understand any trends, their reporting frequency, date of last report, etc.
-
 * As an IR, I want to be able to flag a citizen for tracking, the flag indicating the concern: "loon", "paranoid", "anti-gov't paranoid loon", etc.
 
 h2. Principles
