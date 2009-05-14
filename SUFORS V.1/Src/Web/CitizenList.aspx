@@ -12,24 +12,7 @@ CodeFile="CitizenList.aspx.cs" Inherits="CitizenList" %>
         CausesValidation="False" CommandName="Cancel" Text="Cancel" OnCommand="PageCommand" />
 </asp:Content>
 <asp:Content ID="bodyContent" ContentPlaceHolderID="_contentPlaceHolder" Runat="Server">
-    <asp:SqlDataSource ID="_sqlDataSource" runat="server" 
-        ConnectionString="<%$ ConnectionStrings:SUFORS %>" 
-        SelectCommand="usp_GetCitizenList" SelectCommandType="StoredProcedure">
-    </asp:SqlDataSource>
-    <asp:GridView ID="_gridView" runat="server" AllowPaging="True" 
-        AllowSorting="True" DataSourceID="_sqlDataSource" 
-        AutoGenerateColumns="False" DataKeyNames="Id" OnRowCommand="GridCommand">
-        <Columns>
-            <asp:ButtonField DataTextField="Id" ButtonType="Link" 
-            CommandName="Select" HeaderText="Select" />
-            <asp:BoundField DataField="FirstName" HeaderText="First Name" 
-                SortExpression="FirstName, LastName" />
-            <asp:BoundField DataField="LastName" HeaderText="Last Name" 
-                SortExpression="LastName, FirstName" />
-            <asp:BoundField DataField="Phone" HeaderText="Phone" SortExpression="Phone" />
-            <asp:BoundField DataField="EmailAddress" HeaderText="Email Address" 
-                SortExpression="EmailAddress" />
-        </Columns>
-    </asp:GridView>
+    <asp:SqlDataSource ID="_sqlDataSource" runat="server" />
+    <asp:GridView ID="_gridView" runat="server" AllowPaging="true" AllowSorting="true" AutoGenerateColumns="false" />
 </asp:Content>
 
