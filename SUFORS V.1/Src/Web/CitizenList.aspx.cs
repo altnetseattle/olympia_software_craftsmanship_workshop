@@ -7,9 +7,15 @@ public partial class CitizenList : Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        // This is an appropriate UI function.
         _newLink.Command += PageCommand;
     }
 
+    /// <summary>
+    /// TODO: Parsing with no error checking?? Untestable. UI deciding where to navigate to? pfft.
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
     protected void GridCommand(object sender, GridViewCommandEventArgs e)
     {
         var grid = e.CommandSource as GridView;
@@ -24,6 +30,11 @@ public partial class CitizenList : Page
         }
     }
 
+    /// <summary>
+    /// TODO: Once again let's push this down a layer.
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
     protected void PageCommand(object sender, CommandEventArgs e)
     {
         switch (e.CommandName)

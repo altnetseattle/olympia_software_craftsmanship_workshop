@@ -5,6 +5,11 @@ using Sufors.Helpers;
 
 public partial class CitizenEdit : Page
 {
+    /// <summary>
+    /// TODO: This method appears to be managing the session, view mode, and persistence. Tsk tsk. Also untestable.
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
     protected void Page_Load(object sender, EventArgs e)
     {
         if (! Page.IsPostBack)
@@ -28,6 +33,11 @@ public partial class CitizenEdit : Page
         }
     }
 
+    /// <summary>
+    /// TODO: I would rather have as much logic as possible in a testable class instead of the web UI.
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
     protected void PageCommand(object sender, CommandEventArgs e)
     {
         switch (e.CommandName)
