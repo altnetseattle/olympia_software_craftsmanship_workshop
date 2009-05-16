@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using Sufors.Helpers;
 
-public partial class CitizenDetail : System.Web.UI.Page
+public partial class CitizenDetail : Page
 {
     // TODO: Storing an int at this level makes things harder because an int has no context.
     private int id;
@@ -23,8 +20,21 @@ public partial class CitizenDetail : System.Web.UI.Page
 
         //TODO: This one line contains a couple of responsibilities that could be mingled with similar functionality instead.
         Session.Add("_returnUrl", Request.UrlReferrer.PathAndQuery);
-            
+    }
 
+    protected void GridCommand(object sender, GridViewCommandEventArgs e)
+    {
+        var grid = e.CommandSource as GridView;
+        
+
+        switch (e.CommandName)
+        {
+            case "Select":
+                int rowIndex = int.Parse(e.CommandArgument.ToString());
+                var reportId = (int)grid.DataKeys[rowIndex]["Id"];
+                ReportHelper.NavigateToReport(reportId, id);
+                break;
+        }
     }
 
     protected void PageCommand(object sender, CommandEventArgs e)
@@ -36,6 +46,9 @@ public partial class CitizenDetail : System.Web.UI.Page
                 CitizenHelper.NaviateToEditCitizen(id);
                 break;
             case "Add":
+                ReportHelper.NavigateToNewReportForCitizen(id);
+                break;
+            
                 break;
             case "Cancel":
 

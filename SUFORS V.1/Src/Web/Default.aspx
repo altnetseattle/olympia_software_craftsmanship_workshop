@@ -4,7 +4,8 @@
 </asp:Content>
 <asp:Content ID="menuContent" ContentPlaceHolderID="_menuPlaceHolder" runat="server">
     <a href="Default.aspx">Home</a>
-    <a href="CitizenList.aspx">Citizen List</a>
+    <a href="CitizenList.aspx">Citizens</a>
+    <a href="ReportEdit.aspx">Add Report</a>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="_contentPlaceHolder" Runat="Server">
 <div class="bodytext" style="padding: 12px;" align="justify">

@@ -17,7 +17,8 @@ public partial class CitizenList : Page
     private void _SetupDataSource()
     {
         _sqlDataSource.ConnectionString = ConfigurationManager.ConnectionStrings["SUFORS"].ConnectionString;
-        _sqlDataSource.SelectCommand = "usp_GetCitizenList";// = new SqlDataSource(ConfigurationManager.ConnectionStrings["SUFORS"].ConnectionString, "usp_GetCitizenList");
+        _sqlDataSource.SelectCommand = "usp_GetCitizenList";
+            // = new SqlDataSource(ConfigurationManager.ConnectionStrings["SUFORS"].ConnectionString, "usp_GetCitizenList");
         _sqlDataSource.SelectCommandType = SqlDataSourceCommandType.StoredProcedure;
     }
 
@@ -64,7 +65,7 @@ public partial class CitizenList : Page
         _gridView.Columns.Add(emailField);
 
         _gridView.DataSourceID = "_sqlDataSource";
-        _gridView.DataKeyNames = new[]{"Id"};
+        _gridView.DataKeyNames = new[] {"Id"};
         _gridView.RowCommand += GridCommand;
     }
 

@@ -49,7 +49,7 @@ public partial class CitizenEdit : Page
                 _citizenFormView.UpdateItem(false);
                 break;
             case "Cancel":
-                
+
                 break;
         }
 

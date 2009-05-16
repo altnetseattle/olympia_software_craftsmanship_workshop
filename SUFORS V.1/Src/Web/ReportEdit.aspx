@@ -25,7 +25,6 @@
             Description:
             <asp:TextBox ID="DescriptionTextBox" runat="server" 
                 Text='<%# Bind("Description") %>' />
-            <br />
         </EditItemTemplate>
         <InsertItemTemplate>
             Location:
@@ -35,25 +34,42 @@
             Description:
             <asp:TextBox ID="DescriptionTextBox" runat="server" 
                 Text='<%# Bind("Description") %>' />
-            <br />
         </InsertItemTemplate>
+        <ItemTemplate>
+            Id:
+            <asp:Label ID="IdLabel" runat="server" Text='<%# Eval("Id") %>' />
+            <br />
+            Location:
+            <asp:Label ID="LocationLabel" runat="server" Text='<%# Bind("Location") %>' />
+            <br />
+            Description:
+            <asp:Label ID="DescriptionLabel" runat="server" 
+                Text='<%# Bind("Description") %>' />
+            <br />
+            CreatedDate:
+            <asp:Label ID="CreatedDateLabel" runat="server" 
+                Text='<%# Bind("CreatedDate") %>' />
+            <br />
+        </ItemTemplate>
     </asp:FormView>
     <asp:SqlDataSource ID="_reportSqlDataSource" runat="server" 
         ConnectionString="<%$ ConnectionStrings:SUFORS %>" 
-        InsertCommand="usp_EditReport" InsertCommandType="StoredProcedure" 
+        InsertCommand="usp_NewReport" InsertCommandType="StoredProcedure" 
         SelectCommand="usp_GetReportDetail" SelectCommandType="StoredProcedure" 
-        UpdateCommand="usp_NewReport" UpdateCommandType="StoredProcedure">
+        UpdateCommand="usp_EditReport" UpdateCommandType="StoredProcedure"
+        OnInserting="_reportSqlDataSource_Inserting">
         <SelectParameters>
             <asp:QueryStringParameter Name="id" QueryStringField="id" Type="Int32" />
         </SelectParameters>
         <UpdateParameters>
+            <asp:Parameter Name="id" Type="Int32" />
             <asp:Parameter Name="location" Type="String" />
             <asp:Parameter Name="description" Type="String" />
         </UpdateParameters>
         <InsertParameters>
-            <asp:Parameter Name="id" Type="Int32" />
             <asp:Parameter Name="location" Type="String" />
             <asp:Parameter Name="description" Type="String" />
+            <asp:Parameter Name="citizenId"  Type="Int32" />
         </InsertParameters>
     </asp:SqlDataSource>
 </asp:Content>

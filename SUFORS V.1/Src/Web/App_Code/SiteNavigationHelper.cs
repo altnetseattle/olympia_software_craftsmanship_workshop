@@ -24,7 +24,7 @@ namespace Sufors.Helpers
         public static void NavigateToReturnPage()
         {
             var returnUrl = HttpContext.Current.Session["_returnUrl"] as string;
-            if(String.IsNullOrEmpty(returnUrl))
+            if (String.IsNullOrEmpty(returnUrl))
                 NavigateToHome();
 
             HttpContext.Current.Response.Redirect(returnUrl);

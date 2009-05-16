@@ -1,4 +1,3 @@
-using System;
 using System.Web;
 
 namespace Sufors.Helpers
@@ -9,8 +8,8 @@ namespace Sufors.Helpers
     public static class CitizenHelper
     {
         private const string DetailUrl = "~/CitizenDetail.aspx?id={0}";
-        private const string NewUrl = "~/CitizenEdit.aspx?id=New";
         private const string EditUrl = "~/CitizenEdit.aspx?id={0}";
+        private const string NewUrl = "~/CitizenEdit.aspx?id=New";
 
         /// <summary>
         /// TODO: Directly bound to HttpContext and completely untestable.
@@ -18,7 +17,7 @@ namespace Sufors.Helpers
         /// <param name="id"></param>
         public static void NavigateToCitizenDetail(int id)
         {
-            HttpContext.Current.Response.Redirect(string.Format(DetailUrl,id));
+            HttpContext.Current.Response.Redirect(string.Format(DetailUrl, id));
         }
 
         /// <summary>
@@ -35,7 +34,7 @@ namespace Sufors.Helpers
         /// <param name="id"></param>
         public static void NaviateToEditCitizen(int id)
         {
-            HttpContext.Current.Response.Redirect(string.Format(EditUrl,id));
+            HttpContext.Current.Response.Redirect(string.Format(EditUrl, id));
         }
     }
 }
