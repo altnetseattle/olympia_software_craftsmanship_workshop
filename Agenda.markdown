@@ -34,7 +34,7 @@
 * Extract into component, test
 * Isolate database from business logic, test
 
-## TDD (1:30pm - 2:00pm) [Robyn]
+## TDD (1:30pm - 2:00pm) [Robin]
 * Seams, Isolating the thing to test
 * The importance of TDD in refactoring
 
