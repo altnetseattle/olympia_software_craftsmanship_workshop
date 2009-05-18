@@ -1,0 +1,146 @@
+/* 
+  Glossdeck
+  author: John Manoogian III / jm3@jm3.net
+  modified from eric meyer's default theme
+  GPL, keep it real-like.
+ */
+
+body {
+  color: white; 
+  font-family: "Gill Sans", "Avant Garde", "Avant Garde Gothic", Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+:link, :visited {text-decoration: underline; color: #FF007F; /* "Strawberry" pink */ }
+a:hover {text-decoration: underline; color: gray; /* "Strawberry" pink */ }
+#controls :active {color: #88A !important;}
+#controls :focus {outline: 1px dotted #227;}
+h1, h2, h3, h4 {font-size: 100%; margin: 0; padding: 0; font-weight: inherit; text-align: center;}
+ul, pre {margin: 0; line-height: 1em; font-size: 88%;}
+html, body {margin: 0; padding: 0;}
+
+q {font-style: italic;}
+blockquote {
+  width: 60%;
+  padding: 1.0em;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1em;
+}
+blockquote p {margin: 0;}
+blockquote cite {
+  display: block;
+  font-style: italic;
+  width: 100%
+  border: 1px;
+  margin-top: 0.8em;
+  text-align: right;
+}
+blockquote b {display: block; margin-top: 0.5em; font-weight: normal; font-size: smaller; font-style: normal;}
+blockquote b i {font-style: italic;}
+
+kbd {font-weight: bold; font-size: 1em;}
+sup {font-size: smaller; line-height: 1px;}
+
+.slide code {padding: 2px 0.25em; font-weight: bold; color: yellow;}
+.slide code.bad, code del {color: red;}
+.slide code.old {color: silver;}
+.slide pre {padding: 0; margin: 0.25em 0 0.5em 0.5em; color: #533; font-size: 90%;}
+.slide pre code {display: block;}
+.slide ul {margin-left: 5%; margin-right: 7%; list-style: disc;}
+.slide li {margin-top: 0.75em; margin-right: 0;}
+.slide ul ul {line-height: 0.8em;}
+.slide ul ul li {margin-left: -2.2em; font-size: 90%; list-style: disc;}
+.slide ul ul ul li {margin-left: -5.4em; font-size: 80%; list-style: circle;}
+.slide img.leader {display: block; margin: 0 auto;}
+.slide img { 
+  border: 1px solid black; 
+}
+p.caption {
+  font-size: 50%;
+}
+.solo {
+  padding: 10%;
+}
+.small {
+  font-size: 80%;
+}
+
+div#header, div#footer {
+  color: white;
+}
+div#header {background: black  -16px 0 no-repeat;
+  line-height: 1px;}
+div#footer {
+  background: black;
+  -moz-opacity: 0.6;
+  font-size: 0.5em; 
+  padding: 0.5em;
+}
+#footer h1, #footer h2 {display: block; text-align: center;}
+#footer h2 {font-style: italic;}
+
+div.long {font-size: 0.75em;}
+.slide h1 {
+  margin: 0; padding: 0.3em 0 0 50px; white-space: nowrap;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-family: "Gill Sans", "Avant Garde", "Avant Garde Gothic", Helvetica, sans-serif;
+  color: #FF007F; /* "Strawberry" pink */
+}
+.slide h3 {
+  font-size: 130%;
+}
+h1 abbr {font-variant: small-caps;}
+
+div#controls {position: absolute; left: 50%; bottom: 0;
+  width: 50%;
+  text-align: right; font: bold 0.9em Verdana, Helvetica, sans-serif;}
+div#controls select option {
+  background: black;
+  color: #FF007F; /* "Strawberry" pink */
+  padding: 1px;
+}
+html>body div#controls {
+position: fixed; padding: 0 0 1em 0;
+  top: auto;}
+div#controls form {position: absolute; bottom: 0; right: 0; width: 100%;
+  margin: 0; padding: 0;}
+#controls #navLinks a {
+  padding: 10px; 
+  margin: 0 1px;
+  border: none; 
+  background: #222222; 
+  color: #FF007F; /* "Strawberry" pink */
+  cursor: pointer;}
+#controls #navList {height: 1em;}
+#controls #navList #jumplist {position: absolute; bottom: 0; right: 0; background: #DDD; color: #227;}
+
+#currentSlide {text-align: center; font-size: 0.5em; color: #449; margin-bottom: -9px;}
+
+#slide0 {padding-top: 3.5em; font-size: 90%;}
+#slide0 h1 {position: static; 
+  font-size: 2em;
+  white-space: normal;
+  color: #FF007F;
+  background: transparent;}
+#slide0 h3 {margin-top: 1.5em; font-size: 1.5em; padding: 1.0em;}
+#slide0 h4 {margin-top: 0; font-size: 1em;}
+
+ul.urls {list-style: none; display: inline; margin: 0;}
+.urls li {display: inline; margin: 0;}
+.note {display: none;}
+.external {border-bottom: 1px dotted gray;}
+html>body .external {border-bottom: none;}
+.external:after {content: " \274F"; font-size: smaller; color: #77B;}
+
+.incremental, .incremental *, .incremental *:after {color: #DDE; visibility: visible;}
+img.incremental {visibility: hidden;}
+.slide .current {color: #B02;}
+
+
+/* styles for background-image; uses mark schenk's method; see: http://markschenk.com/cssexp/background/scaledbgimage.html  */
+html { height: 100%; overflow:hidden;}
+body { background-color: transparent; margin: 0px; padding: 0px; height: 100%; border-top: 1px transparent solid; margin-top: -1px; z-index:0; position:relative; }
+img#background { height: 100%; width: 100%; z-index: -1; position:absolute; color: white; }
+

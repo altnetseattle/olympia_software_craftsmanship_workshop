@@ -1,0 +1,42 @@
+/* don't change this unless you want the layout stuff to show up in the outline view! */
+
+.layout div, #footer *, #controlForm *, #background {display: none;}
+#footer, #controls, #controlForm, #navLinks, #toggle {
+  display: block; visibility: visible; margin: 0; padding: 0;}
+#toggle {float: right; padding: 0.5em;}
+html>body #toggle {position: fixed; top: 0; right: 0;}
+
+/* making the outline look pretty-ish */
+
+body {
+  background-color: #525063; /* bottom of gradient color */
+  background-color: #18162B; /* center of gradient color */
+}
+
+#slide0 h1, #slide0 h2, #slide0 h3, #slide0 h4 {
+  border: none; 
+  margin: 0; 
+  color: #FF007F; /* "Strawberry" pink */
+}
+#slide0 h1 {padding-top: 1.5em;}
+.slide h1 {margin: 1.5em 0 0; padding-top: 0.25em;
+  border-top: 1px solid #888; border-bottom: 1px solid #AAA;
+  color: #FF007F; /* "Strawberry" pink */
+  }
+.slide { 
+  -moz-opacity: 0.8;
+  color: white;
+  background-color: black;
+  padding: 1.0em; 
+}
+
+#toggle {
+  border: 2px solid #18162B; 
+  border-width: 0 0 2px 2px;
+  padding: 10px; 
+  margin: 0 1px;
+  background: #222222; 
+  color: #FF007F; /* "Strawberry" pink */
+  cursor: pointer;
+  font-size: 3.0em;
+}
