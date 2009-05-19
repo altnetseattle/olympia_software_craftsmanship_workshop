@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+><head
+  ><title
+    >Refactoring</title
+    ><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"
+     /><meta name="generator" content="pandoc"
+     /><meta name="author" content="Justin and Chris"
+     />  <link rel="stylesheet" href="../ui/glossdeck/slides.css" type="text/css" media="projection" id="slideProj" />
+  <link rel="stylesheet" href="../ui/glossdeck/outline.css" type="text/css" media="screen" id="outlineStyle" />
+  <link rel="stylesheet" href="../ui/glossdeck/print.css" type="text/css" media="print" id="slidePrint" />
+  <link rel="stylesheet" href="../ui/glossdeck/opera.css" type="text/css" media="projection" id="operaFix" />
+
+  <script src="../ui/glossdeck/slides.js" type="text/javascript"></script>
+
+  <style>
+    body {
+    background: url(../ui/glossdeck/gradient-bg.jpg);
+    }
+  </style>
+</head
+  ><body
+  ><div class="layout">
+<div id="controls"></div>
+<div id="currentSlide"></div>
+<div id="header"></div>
+<div id="footer">
+<h1 id="section"
+    ></h1
+    ><h2 id="refactoring"
+    >Refactoring</h2
+    ></div>
+</div>
+<div class="presentation">
+
+<div class="slide">
+<h1 id="refactoring-1"
+    >Refactoring</h1
+    ><h3 id="justin-and-chris"
+    >Justin and Chris</h3
+    ><h4 id="section-1"
+    ></h4
+    ></div>
+<div class="slide">
+<h1 id="what-is-refactoring-not"
+    >What is refactoring not?</h1
+    ><p
+    >Refactoring is a loaded term in software engineering.</p
+    ><p
+    ><img src="" alt="Venn diagram"
+       /></p
+    ></div>
+<div class="slide">
+<h1 id="what-is-refactoring-not-1"
+    >What is refactoring not?</h1
+    ><p
+    >For the kind of refactoring we're talking about, it's easier to define in terms of what it is not.</p
+    ><p
+    ><img src="" alt="Venn diagram"
+       /></p
+    ></div>
+<div class="slide">
+<h1 id="lets-call-this-big-r-refactoring"
+    >Let's call this &quot;Big 'R' Refactoring&quot;</h1
+    ></div>
+<div class="slide">
+<h1 id="what-is-refactoring-not-2"
+    >What is refactoring not?</h1
+    ><p
+    >&quot;We're going to be refactoring for the next few weeks...&quot;</p
+    ><ul class="incremental"
+    ><li
+      >Refactoring _adds_value_that_cannot_be<em
+	>measured</em
+	></li
+      ><li
+      >Unless you don't care about value, you can't be refactoring for long periods of time</li
+      ></ul
+    ></div>
+<div class="slide">
+<h1 id="what-is-refactoring-not-3"
+    >What is refactoring not?</h1
+    ><p
+    >&quot;We don't need to fix that bug. It'll get fixed by our refactoring.&quot;</p
+    ><ul class="incremental"
+    ><li
+      >Refactoring doesn't start when the system is in a broken state</li
+      ></ul
+    ></div>
+<div class="slide">
+<h1 id="what-is-refactoring"
+    >What is refactoring?</h1
+    ></div>
+<div class="slide">
+<h1 id="what-is-technical-debt"
+    >What is &quot;technical debt?&quot;</h1
+    ></div>
+<div class="slide">
+<h1 id="the-3-state-machine"
+    >The 3-state machine</h1
+    ><p
+    ><img src="" alt="Red-Green-Refactor Graphic"
+       /></p
+    ></div>
+<div class="slide">
+<h1 id="the-3-state-machine-1"
+    >The 3-state machine</h1
+    ><p
+    >Red-Green-Refactor: * Red -&gt; Adding new features &lt;- breaking tests * Green -&gt; Features implemented, barely * Refactor -&gt; Technical debt paid off</p
+    ></div>
+<div class="slide">
+<h1 id="no-new-features"
+    >No new features</h1
+    ><p
+    >Should not &quot;go red&quot; while refactoring</p
+    ></div>
+<div class="slide">
+<h1 id="no-new-feature"
+    >No new feature</h1
+    ><p
+    ><img src="" alt="Stepping stones picture"
+       /></p
+    ></div>
+<div class="slide">
+<h1 id="extract-data-access-stuff-from-template-to-page_load-test"
+    >Extract data access stuff from template to Page_Load, test</h1
+    ><p
+    >(code)</p
+    ></div>
+<div class="slide">
+<h1 id="extract-method-test"
+    >Extract method, test</h1
+    ><p
+    >(code)</p
+    ></div>
+<div class="slide">
+<h1 id="extract-into-component-test"
+    >Extract into component, test</h1
+    ><p
+    >(code)</p
+    ></div>
+<div class="slide">
+<h1 id="isolate-database-from-business-logic-test"
+    >Isolate database from business logic, test</h1
+    ><p
+    >(code)</p
+    ></div>
+<div class="slide">
+<h1 id="were-just-improving-the-design"
+    >We're <em
+      >just</em
+      > improving the design</h1
+    ><ul
+    ><li
+      >We haven't added any features</li
+      ><li
+      >At any (ok...<em
+	>almost</em
+	> any) time during above work we were green</li
+      ></ul
+    ></div>
+<div class="slide">
+<h1 id="service"
+    >Service</h1
+    ></div>
+<div class="slide">
+<h1 id="service-locator"
+    >Service Locator</h1
+    ><p
+    >for components above (new DAComponent -&gt; serviceLocator.Get<IComponent>()</p
+    ></div>
+<div class="slide">
+<h1 id="this-enables-us-to-add-features-like-bobbys-example-of-getting-e-mail-address-to-auto-associate-report-with-citizen"
+    >This enables us to add features like... (Bobby's example of getting e-mail address to auto-associate report with citizen)</h1
+    ></div>
+<div class="slide">
+<h1 id="httpcontext-in-the-helpers"
+    >HttpContext in the helpers</h1
+    ><p
+    >Navigation service</p
+    ></div>
+</div>
+</body
+  ></html
+>
+
