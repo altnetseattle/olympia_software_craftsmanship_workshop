@@ -8,10 +8,10 @@ Refactoring is a loaded term in software engineering.
 For the kind of refactoring we're talking about, 
 it's easier to define in terms of what it is not.
 
-![Venn diagram]()
+![](Refactoring_and_not_Refactoring_Venn_Diagram.png)
 
 # Let's call this "Big 'R' Refactoring"
-![Picture of a big 'R']()
+![](Big_R.png)
 
 # What is refactoring not?
 "We're going to be refactoring for the next few weeks..."
