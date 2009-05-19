@@ -29,7 +29,7 @@ it's easier to define in terms of what it is not.
 # What is "technical debt?"
 
 # The 3-state machine
-![Red-Green-Refactor Graphic]()
+![from http://agileinaflash.blogspot.com/2009/02/red-green-refactor.html](Red_Green_Refactor.JPG)
 
 # The 3-state machine
 Red-Green-Refactor:
