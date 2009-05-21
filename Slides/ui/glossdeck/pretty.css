@@ -53,9 +53,7 @@ sup {font-size: smaller; line-height: 1px;}
 .slide ul ul li {margin-left: -2.2em; font-size: 90%; list-style: disc;}
 .slide ul ul ul li {margin-left: -5.4em; font-size: 80%; list-style: circle;}
 .slide img.leader {display: block; margin: 0 auto;}
-.slide img { 
-  border: 1px solid black; 
-}
+
 p.caption {
   font-size: 50%;
 }
