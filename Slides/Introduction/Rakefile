@@ -6,7 +6,7 @@ desc "Compile the slides PDF"
 task :slides => ["Introduction.html"]
 
 rule '.html' => '.markdown' do |t|
-  sh "pandoc #{t.source} --to s5 --output #{t.target} --standalone --custom-header ../Header.html"
+  sh "pandoc #{t.source} --to s5 --output #{t.name} --standalone --custom-header ../Header.html"
 end
 
 file "Introduction.html" => "Introduction.markdown"
