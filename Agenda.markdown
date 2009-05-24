@@ -1,57 +1,74 @@
-# Agenda
+Agenda
+======
 
-## Introduction (15 minute) (10-10:15am) [Trevor, Chris]
+# Introduction (15 minute) (10-10:15am) [Trevor, Chris]
 * What are we doing today...
 * what app is
 
-## Classic ASP.NET Development (45 minutes) (-11pm) [Bobby]
-* Show the existing
-* Add a feature find orphan reports and associate citizens
+# Classic ASP.NET Development (45 minutes) (-11pm) [Bobby]
 
-## Getting the system under test (45 minutes) (-11:45am) [Jeff]
-* Outside in tests
-* Bug example: Citizen -> Add new citizen. Cancel. Cancel Again, but navigation broken. Or a state dependent bug.
+We're going to do a first cut just building a plain old ASP.NET web
+forms application. We'll think about the first scenario in the
+stories, not considering the second story.
 
-## Lunch (11:45am-12:30pm)
+Next we'll look at adding the second scenario and show how it's
+difficult with the poor design we've slapped together.
 
-## What I really wanted was... (45 minutes) (-1:15pm) [Trevor]
-* Stories
-* Backlog
-* Do you really think you can get all the requirements up front?
-  + -> solution: design must be supple and easy to change.
-  + regardless of intention, you're going to have to change design
-* new feature request (that's hard to do without refactoring, something that breaks the schema, we'd have to search SQL strings all over)
+We'll consider things like keeping the SQL into a stored procedure and
+other steps we might take to get this under control, and discuss the
+pros and cons of each approach.
 
-## Refactoring (45 minutes) (1:15-2pm) [Justin, Chris]
-* Introduction to refactoring
-  + The 3-state machine
-  + No new features
-* Extract data access stuff from template to Page_Load, test
-* Extract method, test
-* Extract into component, test
-* Isolate database from business logic, test
-* We're _just_ improving the design
-* Service
-* Service Locator
-  + for components above (new DAComponent -> serviceLocator.Get<IComponent>()
-* This enables us to add features like... (Bobby's example of getting e-mail address to auto-associate report with citizen) 
-* HttpContext in the helpers
-  + Navigation service
+# Getting the system under test (45 minutes) (-11:45am) [Jeff]
 
-## Break (2-2:15pm)
+Since we have no tests and an untestable design, we're going to start
+with [outside in
+tests](http://xunitpatterns.com/Philosophy%20Of%20Test%20Automation.html)
+to get something around the system.
 
-## TDD (2:15-3pm) [Robin]
-* Seams, Isolating the thing to test
-* The importance of TDD in refactoring
+We're going to look at automated web testing frameworks like Watin and
+Selenium and how we can use them to build up integration and
+acceptance tests.
 
-## Standing on the shoulders of giants  (2:30-3:15pm) [Jeff]
-* Common ways of solving these problems...
-* Strategy - the switch statement
-  + We don't want to touch code all over the place...
-  + This is called the "Strategy Pattern"
-* All these things are patterns
+# Lunch (11:45am-12:30pm)
 
-## Extras (3:15 - 3:30pm) [Everyone]
+# What I really wanted was... (45 minutes) (-1:15pm) [Trevor, Everyone]
+
+Do we really think we can get all the requirements up front?
+
+The one constant in software development is change. How well your
+design can be changed will make or break it.
+
+In the process of interviewing our customer and talking about what he
+really wanted, we'll discover just enough information to complete the
+next part of our application.
+
+We'll talk about different ways to collaborate with product owners and
+customers to get the information we need to solve problems, how to
+manage a backlog of this information, and ways to process that
+information more efficiently.
+
+# Refactoring (45 minutes) (1:15-2pm) [Justin, Chris]
+
+With the new information we've gotten from the customer, we'll start
+changing our design to get into a position to process that
+information.
+
+We'll focus on the basic rules of refactoring and how we can use these
+techniques to make our design more supple.
+
+# Break (2-2:15pm)
+
+# TDD (2:15-3pm) [Robin]
+
+Now that we're ready, we'll use TDD techniques to drive the design of
+a new feature we want to add to the application.
+
+# Standing on the shoulders of giants  (2:30-3:15pm) [Jeff]
+
+We'll talk about patterns we could use going forward to improve our
+application, and how others have solved these problems in the past.
+
+# Extras (3:15 - 3:30pm) [Everyone]
 * Castle, Ninject, etc.
 * where are the links
 
