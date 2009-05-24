@@ -1,7 +1,7 @@
 Olympia Software Craftsmanship Workshop
 =======================================
 Saturday, June 6th, 2009, 10am-4pm
-[Olympia Center](http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=olympia+center,+olympia,+wa&sll=37.0625,-95.677068&sspn=49.57764,114.257812&ie=UTF8&ll=47.041469,-122.913322&spn=0.083993,0.22316&t=h&z=13&iwloc=E)
+[Olympia Center][1]
 
 # Overview
 
@@ -50,9 +50,9 @@ The principles we want to focus on are:
 
 * Using User Stories and TDD to focus on real customer value
 * Refactoring legacy code to make it testable *before* adding new features
-* [S.O.L.I.D.](http://blog.objectmentor.com/articles/2009/02/12/getting-a-solid-start)
-* [INVEST](http://xp123.com/xplor/xp0308/index.shtml)
-* [Individuals and interactions over processes and tools](http://agilemanifesto.org/)
+* [S.O.L.I.D.][2]
+* [INVEST][3]
+* [Individuals and interactions over processes and tools][4]
 
 # First Cut
 
@@ -60,9 +60,8 @@ We're going to do a first cut just building a plain old ASP.NET web
 forms application. We'll think about the first scenario in the
 stories, not considering the second story.
 
-We'll create a web form with a [master detail
-view](http://designingwebinterfaces.com/designing-web-interfaces-12-screen-patterns),
-add a data source control, wire it with SQL in properties and all.
+We'll create a web form with a [master detail view][5] add a data
+source control, wire it with SQL in properties and all.
 
 Next we'll look at adding the second scenario and show how it's
 difficult with the poor design we've slapped together.
@@ -73,9 +72,8 @@ the pros and cons of each approach.
 
 # Refactoring
 
-We'll use the safe refactorings outlined in [Michael
-Feathers](http://www.amazon.com/gp/product/0131177052/ref=s9_sims_c2_s1_p14_i2?pf_rd_m=ATVPDKIKX0DER&pf_rd_s=center-2&pf_rd_r=0S8D0VHK1WGVWC6Q21Q7&pf_rd_t=101&pf_rd_p=470938631&pf_rd_i=507846)
-book to build seams and make the code we have so far testable.
+We'll use the safe refactorings outlined in [Michael Feathers][6] book
+to build seams and make the code we have so far testable.
 
 First, we'll pull the data access code out of the ASPX page and into a
 service.  We'll have the code behind be responsible for creating the
@@ -103,4 +101,19 @@ work better:
   - TeamCity
   - Hudson
 * Agile Estimation
+
+[1]: http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=olympia+center,+olympia,+wa&sll=37.0625,-95.677068&sspn=49.57764,114.257812&ie=UTF8&ll=47.041469,-122.913322&spn=0.083993,0.22316&t=h&z=13&iwloc=E
+    "Olympia Center, on Google Maps"
+[2]: http://blog.objectmentor.com/articles/2009/02/12/getting-a-solid-start
+    "Getting a SOLID Start"
+[3]: http://xp123.com/xplor/xp0308/index.shtml
+    "INVEST in Good Stories, and SMART Tasks"
+[4]: http://agilemanifesto.org/
+    "Manifesto for Agile Software Development"
+[5]: http://designingwebinterfaces.com/designing-web-interfaces-12-screen-patterns
+    "12 Standard Screen Patterns"
+[6]: http://www.amazon.com/gp/product/0131177052/ref=s9_sims_c2_s1_p14_i2?pf_rd_m=ATVPDKIKX0DER&pf_rd_s=center-2&pf_rd_r=0S8D0VHK1WGVWC6Q21Q7&pf_rd_t=101&pf_rd_p=470938631&pf_rd_i=507846
+    "Working Effectively with Legacy Code"
+
+
 
