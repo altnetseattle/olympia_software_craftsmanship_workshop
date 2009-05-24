@@ -21,9 +21,7 @@ pros and cons of each approach.
 # Getting the system under test (45 minutes) (-11:45am) [Jeff]
 
 Since we have no tests and an untestable design, we're going to start
-with [outside in
-tests](http://xunitpatterns.com/Philosophy%20Of%20Test%20Automation.html)
-to get something around the system.
+with [outside in tests][1] to get something around the system.
 
 We're going to look at automated web testing frameworks like Watin and
 Selenium and how we can use them to build up integration and
@@ -77,4 +75,6 @@ application, and how others have solved these problems in the past.
 * We're Evolutionaryily designing
 * Look, the tests still work, time for beer
 
+[1]: http://xunitpatterns.com/Philosophy%20Of%20Test%20Automation.html
+     "Philosophy of Test Automation"
 
