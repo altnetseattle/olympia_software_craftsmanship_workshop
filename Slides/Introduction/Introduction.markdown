@@ -43,6 +43,9 @@
 # Trevor Rotzien
 
 # Why are we doing this?
+> * Echo chambers don't work
+> * There are no more excuses
+> * Let's figure out what works
 
 # The story
 

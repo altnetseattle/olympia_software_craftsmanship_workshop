@@ -1,0 +1,152 @@
+<h1 id="sufors-user-stories-and-notes"
+>SUFORS User Stories and Notes</h1
+><h1 id="our-customer"
+>Our Customer</h1
+><h2 id="able-probe-inc"
+><a href="http://ableprobe.com" title="AbleProbe.com"
+  >Able Probe, Inc.</a
+  ></h2
+><p
+>In generic terms, a company that provides incident report recording and analysis services, on a contractual basis, to a state government. Incidents are reported by citizens of the state. In specific terms, a private company contracted by the State governments to track citizen reports of UFO incidents, and report on trends and the credibly worrisome. (In this fictional world, UFO sightings and contacts with ET&#8217;s are as common and nearly as mundane a nuisance as neighbors with barking dogs or sofas in front yards, etc).</p
+><h2 id="company-culture"
+>Company Culture</h2
+><p
+>Company culture is inconsistent and evolving: Mixture of ex-military people in more senior positions, who are gradually being back-filled by Web-centric types. Majority of staff are data-entry people or so-called knowledge workers. They mostly enter data and run queries and reports. Some in-house techies, but no one capable of building a new solution.</p
+><h2 id="tech-culture"
+>Tech Culture</h2
+><p
+>Oldest employees are accustomed to &#8220;green-screen&#8221; applications running on their old IBM AS/400 mini. Newer employees and management are Web-savvy, and are demanding a fundamental technology change, partly for personal reasons, but also to respond better to the States&#8217; new functional requirements.</p
+><h1 id="our-customers-customer"
+>Our Customer&#8217;s Customer</h1
+><p
+>Pacifica State Department of Extra-Terrestrial Tracking &amp; Response or &#8220;DETTR&#8221;</p
+><h1 id="our-mission"
+>Our Mission</h1
+><p
+>Help Able Probe respond to new demands from its largest customer, DETTR.</p
+><p
+>DETTR has been publicly promoting the use of text messaging and email as a way for citizens to report UFO sightings (or more direct, usually unpleasant contacts). DETTR is trying to minimize pressure on their 1-800 phone service. They want Able Probe to provide much more efficient incident recording and reporting services via real-time handling of incoming text messages and email.</p
+><p
+>Able Probe is in trouble, because they currently use their old application, the State UFO Reporting System (SUFORS). The people who wrote SUFORS are long gone, and fixing it wouldn&#8217;t really deal with the fundamental needs of DETTR anyway. They know they have to contract us to design and build new a Web-centric app.</p
+><h1 id="requirements"
+>Requirements</h1
+><h2 id="customer-interview"
+>Customer Interview</h2
+><p
+>With permission of Able Probe's CEO, Seth Drawlings, we had our product manager interview several of Able Probe's account managers who know the existing SUFORS processes and work-flows best. It was clear that they want us to primarily address improvements to the way Able Probe staff use SUFORS to handle citizen messages coming in by email and IM. Currently staff process text files manually entered by contract staff who transcribe voice mail messages left on the State's UFO reporting line. The State is asking Able Probe to improve the software and processes so that Able Probe staff can rapidly process text from incoming emails and IM messages.</p
+><h2 id="entity-model-from-interviews"
+>Entity Model from interviews</h2
+><h3 id="citizens-send-messages"
+>Citizens send Messages</h3
+><ul
+><li
+  >IR's review Messages</li
+  ><li
+  >IR's create Incident Records</li
+  ></ul
+><h3 id="citizen"
+>Citizen</h3
+><ul
+><li
+  >State of Residence</li
+  ><li
+  >State ID Number</li
+  ><li
+  >First Name</li
+  ><li
+  >Middle Initial (optional)</li
+  ><li
+  >Last Name</li
+  ><li
+  >Primary Phone Number</li
+  ><li
+  >Primary Email Address</li
+  ><li
+  >Tracking Flag (defaults to null) List: &#8220;loon&#8221;, &#8220;paranoid&#8221;, &#8220;anti-gov&#8217;t paranoid loon&#8221;, &quot;credible source&quot;, etc.</li
+  ></ul
+><h3 id="message"
+>Message</h3
+><ul
+><li
+  >ID</li
+  ><li
+  >Date-Time Stamp (UTC)</li
+  ><li
+  >Header</li
+  ><li
+  >Content</li
+  ><li
+  >From</li
+  ><li
+  >Originating IPA</li
+  ></ul
+><h3 id="user"
+>User</h3
+><ul
+><li
+  >SUFORS ID</li
+  ><li
+  >Primary Role (e.g. &quot;Incident Recorder&quot;)</li
+  ><li
+  >First Name</li
+  ><li
+  >Middle Initial (optional)</li
+  ><li
+  >Last Name</li
+  ><li
+  >User Name</li
+  ><li
+  >Password (Encrypted)</li
+  ></ul
+><h3 id="incident-record"
+>Incident Record</h3
+><ul
+><li
+  >ID</li
+  ><li
+  >Date-Time Stamp (UTC)<br
+     /></li
+  ><li
+  >Message ID</li
+  ><li
+  >Recorder ID</li
+  ><li
+  >Recorder Comments</li
+  ><li
+  >Follow-up Flag (defaults to null) List: &#8220;ignore&#8221;, &#8220;curious&#8221;, &quot;worrisome&quot;, &#8220;urgent&#8221;, &quot;crisis&quot;</li
+  ></ul
+><h2 id="user-profiles"
+>User Profiles</h2
+><p
+>Incident Recorder (IR): Basic operator of the system, focused on reviewing citizen messages delivered by a variety of methods (primarily text messages and emails, but also text records of phone calls recorded by other staff), and recording them in SUFORS as &quot;incident records&quot;.</p
+><h2 id="user-stories-and-acceptance-criteria"
+>User Stories and Acceptance Criteria</h2
+><ul
+><li
+  >As an IR, I want to be able to easily view my backlog of incoming, yet unrecorded citizen messages so I know exactly what needs to be worked on.</li
+  ><li
+  >When there are incoming messages, I can see them in my message backlog.</li
+  ><li
+  ><p
+    >When there are messages that have already been recorded, I can no longer see them in my message backlog.</p
+    ></li
+  ><li
+  >As an IR, I want to be able to link an incoming message (regardless of how it was submitted) to a citizen, if that citizen has previously sent a message, so I can avoid redundant data entry.</li
+  ><li
+  ><p
+    >When I am working on an incoming message, I can select an existing citizen</p
+    ></li
+  ><li
+  ><p
+    >As an IR, I want to be able to auto-populate as much of the incident record form as possible, directly from a citizen message, so I can minimize my data entry.</p
+    ></li
+  ><li
+  ><p
+    >As an IR, I want to be able to view a citizen's historical incident records by selecting a citizen anywhere a citizen appears within the application, so I can understand any trends, their reporting frequency, date of last report, etc.</p
+    ></li
+  ><li
+  ><p
+    >As an IR, I want to be able to flag a citizen for tracking, the flag indicating the concern: &quot;loon&quot;, &quot;paranoid&quot;, &quot;anti-gov't paranoid loon&quot;, etc.</p
+    ></li
+  ></ul
+>
