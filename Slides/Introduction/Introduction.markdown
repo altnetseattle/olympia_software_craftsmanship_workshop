@@ -2,9 +2,6 @@
 
 # Welcome
 
-> foo
-> bar, baz
-
 # Some rules
 > * Ask Questions
 > * Stop us if we don't cover something you want to talk about
@@ -27,7 +24,7 @@
 
 # Who we are
 > * ALT.NET Seattle
-![](Alt.NET_logo.png)
+![ALT.NET Logo](RWS1-Small.png)
 > * South Sound .NET
 
 # Chris Bilson
