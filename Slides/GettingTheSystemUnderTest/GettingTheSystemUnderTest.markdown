@@ -2,14 +2,14 @@
 % Jeff
 
 # Agenda
-* An overview of the test effort
-* Unit testing
-* Integration Testing
-* End-to-end testing
+* The Value Of Testing
+* An Overview Of The Entire Test Effort
+* "Outside-in" Testing
+* Let's do it!
 
 # The Value Of Testing
 
-# An overview of the entire test effort
+# An Overview Of The Entire Test Effort
 <img style="display:block;margin-left:auto;margin-right:auto;" src="testpyramid.png"></img>
 
 # "Outside-in" Testing
