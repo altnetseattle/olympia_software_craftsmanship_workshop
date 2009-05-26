@@ -14,3 +14,9 @@ div#controls form {position: absolute; bottom: 0; right: 0; width: 100%;
   margin: 0;}
 #currentSlide {position: absolute; width: 10%; left: 90%; bottom: 1em; z-index: 10;}
 html>body #currentSlide {position: fixed;}
+
+img { 
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
