@@ -12,16 +12,7 @@
 # An overview of the entire test effort
 <img style="display:block;margin-left:auto;margin-right:auto;" src="testpyramid.png"></img>
 
-# The value of Unit Tests in the context of TDD
-* Things that TDD can't get you [easily]
-* Hazards of pervasive mocking
+# "Outside-in" Testing
 
-# Unit tests
-* Narrow-focus what is tested
-* Mock the rest
-* Risk points 
- 
-# Integration testing
-* Compared to TDD
-* hook up the rest of the system (persistence layer, entire domain, etc)
-* Risk points
+# The Hasty Fighting Position As A Metaphor For Outside-in Testing
+<img style="display:block;margin-left:auto;margin-right:auto;" src="hasty.gif"></img>
