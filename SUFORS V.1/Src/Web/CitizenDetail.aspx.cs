@@ -48,8 +48,6 @@ public partial class CitizenDetail : Page
             case "Add":
                 ReportHelper.NavigateToNewReportForCitizen(id);
                 break;
-            
-                break;
             case "Cancel":
 
                 break;
