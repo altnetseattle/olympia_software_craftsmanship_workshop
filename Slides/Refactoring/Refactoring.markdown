@@ -16,8 +16,10 @@ it's easier to define in terms of what it is not.
 # What is refactoring not?
 "We're going to be refactoring for the next few weeks..."
 
-> * Refactoring _adds_value_that_cannot_be_measured_
+> * Refactoring _adds value that cannot be measured_
 > * Unless you don't care about value, you can't be refactoring for long periods of time
+
+![Image of a garage I need to find]()
 
 # What is refactoring not?
 "We don't need to fix that bug. It'll get fixed by our refactoring."
@@ -33,9 +35,10 @@ it's easier to define in terms of what it is not.
 
 # The 3-state machine
 Red-Green-Refactor:
+
 * Red -> Adding new features <- breaking tests
 * Green -> Features implemented, barely
-* Refactor -> Technical debt paid off
+* Refactor -> pay down Technical Debt
 
 # No new features
 Should not "go red" while refactoring
@@ -68,3 +71,4 @@ for components above (new DAComponent -> serviceLocator.Get<IComponent>()
 
 # HttpContext in the helpers
 Navigation service
+
