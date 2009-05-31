@@ -61,7 +61,7 @@ techniques to make our design more supple.
 Now that we're ready, we'll use TDD techniques to drive the design of
 a new feature we want to add to the application.
 
-# Standing on the shoulders of giants  (2:30-3:15pm) [Jeff]
+# Standing on the shoulders of giants  (2:30-3:15pm) [Everyone]
 
 We'll talk about patterns we could use going forward to improve our
 application, and how others have solved these problems in the past.
