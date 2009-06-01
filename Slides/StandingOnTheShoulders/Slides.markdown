@@ -278,17 +278,86 @@ Ninject, Unity. You can find links on the links page.
 
 ## Controller
 
-## Presenter
+Controllers should be thin endpoints that map some desired behavior to
+service entry points - ideally one entry point.
+
+Controllers usually need to have details on what kind of presentation
+technology the application is using.
+
+For example, in a web application, a controller probably needs to be
+http addressable somehow.
+
+There is a convention, I believe started by Rails, where controllers
+are responsible for some area of the application and actions are the
+specific response handlers. So ReportIntake/Abduction.rails might
+resolve to calling the Abduction method on the ReportIntake controller
+class. This is also the convention for Monorail and ASP.NET MVC.
+
+Frameworks like MR and AMVC can help remove a lot of the http-ness
+from controller actions. Usually you can just declare parameters of
+primitive types and the infrastructure will take care of converting
+URL or POST content into those parameters. For richer request
+responses they can create objects from form fields or deserialize JSON
+into .NET objects. Same goes for the response.
+
+So if controllers don't need to know much about http, and all their
+logic has been extracted to services, what's the point of having a
+controller?
+
+## Supervising Controller vs. Passive View (Model View Presenter)
+
+Our controller definition above doesn't have the controller doing much
+with the view. It's receiving commands or returning objects to the
+view, but it's not manipulating UI components. In fact our controller
+is more like a service facade, like something out of WCF.
+
+Personally, I am fine with that. In the web application space where I
+work, we are moving more and more logic into the presentation layer
+anyway (javascript) and starting to refine some of these patterns
+there, so we really only need a service facade anyway.
+
+For rich and middle class (Silverlight) applications there are more
+choices.
+
+Supervising Controller is a pattern where we take as much of the view
+logic as possible out of the view and put it into a
+controller. The controller is tightly coupled to the UI presentation,
+but easier to test because it's a separate object.
+
+Passive View is similar, but all UI commands are implemented by the
+Controller/Presenter class. 
+
+These two patterns are really about the controller helping out with
+more of the view's work and giving the view less of a dependency on
+the model.
 
 ## View
 
-## ViewModel
+What is this View thing we keep talking about?
+
+If we're talking about HTML, it's the HTML, or perhaps a template for
+generating HTML, like an ASPX file.
+
+In Windows Forms, it's the form. In WPF, the XAML.
+
+It's single responsibility is to contain all the information about
+what UI elements to display on the screen...and maybe to bind objects
+to them.
+
+## Presentation Model
+
+Instead of talking directly to UI components we could model them and
+talk to the model.
+
+This is where you get things like having a view with properties where
+the getters and setters are implemented by getting and setting values
+in some UI widget.
+
+With this abstraction in place, 
 
 ## MVVM
 
 ## MVC
-
-## MVP
 
 ## Are View Models Just Messages?
 
