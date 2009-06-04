@@ -27,7 +27,7 @@
 	<td>beforeCount</td>
 </tr>
 <tr>
-	<td>click</td>
+	<td>clickAndWait</td>
 	<td>ctl00__menuPlaceHolder__newLink</td>
 	<td></td>
 </tr>
