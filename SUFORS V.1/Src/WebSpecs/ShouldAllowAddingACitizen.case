@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>Should allow adding a citizen</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Should allow adding a citizen</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>http://localhost/Web</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Citizens</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeXpathCount</td>
+	<td>/html/body/form[@id='aspnetForm']/div[@id='page']/div[@id='content']/div[@id='contenttext']/div/table[@id='ctl00__contentPlaceHolder__gridView']/tbody/tr</td>
+	<td>beforeCount</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ctl00__menuPlaceHolder__newLink</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>ctl00__contentPlaceHolder__citizenFormView_FirstNameTextBox</td>
+	<td>john</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>ctl00__contentPlaceHolder__citizenFormView_LastNameTextBox</td>
+	<td>smith</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>ctl00__contentPlaceHolder__citizenFormView_PhoneTextBox</td>
+	<td>123-456-7890</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>ctl00__contentPlaceHolder__citizenFormView_EmailAddressTextBox</td>
+	<td>john@smith.net</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>ctl00__menuPlaceHolder__insertButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeXpathCount</td>
+	<td>/html/body/form[@id='aspnetForm']/div[@id='page']/div[@id='content']/div[@id='contenttext']/div/table[@id='ctl00__contentPlaceHolder__gridView']/tbody/tr</td>
+	<td>afterCount</td>
+</tr>
+<tr>
+	<td>verifyExpression</td>
+	<td>javascript{ storedVars['beforeCount'] + 1; }</td>
+	<td>${afterCount}</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

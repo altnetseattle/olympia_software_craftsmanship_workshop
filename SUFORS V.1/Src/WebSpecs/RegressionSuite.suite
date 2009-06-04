@@ -7,9 +7,10 @@
 </head>
 <body>
 <table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
-<tr><td><b>Test Suite</b></td></tr><tr><td><a href="ShouldDisplayHomepage.case">Should display homepage</a></td></tr>
-
+<tr><td><b>Test Suite</b></td></tr>
+<tr><td><a href="ShouldDisplayHomepage.case">Should display homepage</a></td></tr>
 <tr><td><a href="ShouldDisplayCitizenList.case">Should display Citizen List</a></td></tr>
+<tr><td><a href="ShouldAllowAddingACitizen.case">Should allow adding a citizen</a></td></tr>
 </tbody></table>
 </body>
 </html>
