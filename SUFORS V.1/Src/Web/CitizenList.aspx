@@ -13,6 +13,6 @@ CodeFile="CitizenList.aspx.cs" Inherits="CitizenList" %>
 </asp:Content>
 <asp:Content ID="bodyContent" ContentPlaceHolderID="_contentPlaceHolder" Runat="Server">
     <asp:SqlDataSource ID="_sqlDataSource" runat="server" />
-    <asp:GridView ID="_gridView" runat="server" AllowPaging="true" AllowSorting="true" AutoGenerateColumns="false" />
+    <asp:GridView ID="_gridView" class="citizen_list" runat="server" AllowPaging="true" AllowSorting="true" AutoGenerateColumns="false" />
 </asp:Content>
 
