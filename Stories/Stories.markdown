@@ -145,5 +145,8 @@ calls recorded by other staff), and recording them in SUFORS as
 * As an IR, I want to be able to flag a citizen for tracking, the flag 
   indicating the concern: "loon", "paranoid", "anti-gov't paranoid loon", etc.
 
+* As a Incident Manager, I want to be notified of new incidents that are 
+marked as "crisis" or "urgent", so I can dispatch the appropriate authorities.
+
 [1]: http://ableprobe.com
      "AbleProbe.com"

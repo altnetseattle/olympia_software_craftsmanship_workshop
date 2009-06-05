@@ -23,6 +23,8 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Web", "Src\Web\", "{FC77038
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{696A41C4-4AE4-44CD-9411-D74683967083}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sufors.Common", "Src\Sufors.Common\Sufors.Common.csproj", "{5D082A32-3869-44B2-A004-EC044F8F9CB3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,14 @@ Global
 		{696A41C4-4AE4-44CD-9411-D74683967083}.Release|Any CPU.Build.0 = Release|Any CPU
 		{696A41C4-4AE4-44CD-9411-D74683967083}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{696A41C4-4AE4-44CD-9411-D74683967083}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{5D082A32-3869-44B2-A004-EC044F8F9CB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D082A32-3869-44B2-A004-EC044F8F9CB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D082A32-3869-44B2-A004-EC044F8F9CB3}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{5D082A32-3869-44B2-A004-EC044F8F9CB3}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{5D082A32-3869-44B2-A004-EC044F8F9CB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D082A32-3869-44B2-A004-EC044F8F9CB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D082A32-3869-44B2-A004-EC044F8F9CB3}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{5D082A32-3869-44B2-A004-EC044F8F9CB3}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

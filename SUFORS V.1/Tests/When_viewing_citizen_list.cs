@@ -6,7 +6,7 @@ using NUnit.Framework;
 
 namespace Tests
 {
-    [TestFixture]
+    //[TestFixture]
     public class When_viewing_citizen_list
     {
 
