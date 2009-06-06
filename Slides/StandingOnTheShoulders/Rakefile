@@ -1,0 +1,13 @@
+
+desc "Build the slides"
+task :default => [:slides]
+
+desc "Compile the slides PDF"
+task :slides => ["StandingOnTheShoulders.html"]
+
+rule '.html' => '.markdown' do |t|
+  sh "pandoc #{t.source} --to s5 --output #{t.name} --standalone --custom-header ../Header.html"
+end
+
+file "StandingOnTheShoulders.html" => "StandingOnTheShoulders.markdown"
+
