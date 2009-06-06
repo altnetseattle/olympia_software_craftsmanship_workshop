@@ -22,7 +22,7 @@ resource for learning this stuff.
 
 "A class should have only one reason to change."
 
-I think we can all agree that the name of a class should decribe what
+I think we can all agree that the name of a class should describe what
 it does not how it does it. If something about _doing that one thing_
 changes, then the class needs to change. If something about doing some
 other thing changes, that class should not need to change.
@@ -48,7 +48,7 @@ problems, but for most of this talk, we're going to focus on SRP.
 
 "Classes should be open for extension but closed for modification."
 
-(code: OCP example)
+(code: loon-detector-step1)
 
 ## Liskov Substitution Principle
 

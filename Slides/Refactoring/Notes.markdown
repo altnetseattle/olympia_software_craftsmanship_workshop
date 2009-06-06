@@ -55,15 +55,15 @@ the mess completely obscures the work.
 "We don't need to fix that bug. It'll get fixed by our refactoring."
 
 Big-R doesn't start when the system is in a broken state. Fixing bugs
-is equivalent two adding features (or maybe, "re-enabling features" is
+is equivalent to adding features (or maybe, "re-enabling features" is
 more appropriate.)
 
-Cleaning up the mess on the shop floor is not part of changing the
-customer's brake pads. Big-R recognizes this, keeping the two as
-seperate activities, while still stressing the importance of keeping
-the shop floor clean.
+We only refactor working code. Cleaning up the mess on the shop floor
+is not part of changing the customer's brake pads. Big-R recognizes
+this, keeping the two as separate activities, while still stressing
+the importance of keeping the shop floor clean.
 
-# What is refactoring?
+# What is Refactoring?
 
 Refactoring is improving the design of working code, without changing
 it's features.
@@ -89,7 +89,8 @@ sure features are delivered as soon as possible. Without incurring any
 technical debt it would always take too long to deliver features.
 
 The trick is to be disciplined enough to pay down technical debt on a
-regular basis. To make it part of your routine.
+regular basis. To make it part of your routine. Incorporate it into
+your tight cycle of delivering value.
 
 # The 3-state machine
 
@@ -104,14 +105,16 @@ It has only three states:
 
 - Your cleaning up the design, staying green the whole time. Making an
   incremental payment to the technical debt you've
-  incurred. With practice, you can reach net zero, where the debt you
-  incur is paid off at the end of the cycle.
+  incurred. 
+
+Your mission: practice until you reach net zero, where the debt you
+incur is paid off at the end of the cycle.
 
 # No new features
 
 As soon as we start adding new features, we're back to red. At that
 point, we're done refactoring. If we've got some debt, it's getting
-rolled over into the next refactoring.
+rolled over into the next cycle.
 
 Feel that? That's the pressure of unpaid technical debt.
 

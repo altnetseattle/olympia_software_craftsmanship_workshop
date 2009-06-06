@@ -1,4 +1,5 @@
-% Olympia Software Craftsmanship Workshop
+% Olympia 
+% Software Craftsmanship Workshop
 
 # Welcome
 
@@ -15,7 +16,7 @@
 # What are we are going to do
 > * Look at an application with some issues
 > * Figure out how to put tests around the whole thing
-> * Discover some changes in what is neeeded
+> * Discover some changes in what is needed
 
 # What are we are going to do then
 > * Refactor to a better design
@@ -39,23 +40,43 @@
 
 # Trevor Rotzien
 
+# Anne Wax
+
+![](star_4.jpg)
+
 # Why are we doing this?
 > * Echo chambers don't work
 > * There are no more excuses
 > * Let's figure out what works
 
-# The story
+# The backstory 
 
-![](AbleBodyLogo.png)
+* In this fictional time-line, alien sightings and contact have been
+relatively commonplace since a partial invasion of the U.S. in 1981
+* The U.S. has a different configuration of States and Republics, with
+no federal government
 
-# Environment
+# Our customer
+
+* Able Probe, Inc. (ableprobe.com) provides UFO incident recording
+services to state governments 
+* Citizens send messages to Able Probe
+staff working on behalf of the state, & staff record, analyze and
+report on UFO incidents 
 * Company culture is inconsistent and evolving
-* Majority of staff are data-entry people
+from ex-military to Web-centric 
+* Majority of staff are data-entry
+people
 
-# New product
-* Web version of SUFORS
+# The product
+* Able Probe has recently won a contract renewal with the Pacifica
+State’s Department of Extra-Terrestrial Tracking & Response (DETTR)
+* Contract stipulates a Web-centric update to the aging software used
+by the staff: the State UFO Reporting System (SUFORS).
+* Able Probe is partnering with Alt.NET to develop the new application
+since they do not have experienced developers in-house
 
 # The people
-> * Incident Recorders
-> * Citizens
-> * Aliens 
+* Citizens: Send messages to DETTR via email, text messaging and voice mail
+* Incident Recorders: Work for Able Probe on behalf of DETTR, use SUFORS to convert Citizen messages into Incident Records
+
