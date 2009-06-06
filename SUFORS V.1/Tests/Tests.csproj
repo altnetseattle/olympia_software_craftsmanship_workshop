@@ -53,7 +53,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="When_creating_new_citizen_report_from_citizen_message.cs" />
+    <Compile Include="When_creating_new_incident_from_citizen_message.cs" />
     <Compile Include="When_saving_a_new_incident.cs" />
     <Compile Include="When_viewing_citizen_list.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

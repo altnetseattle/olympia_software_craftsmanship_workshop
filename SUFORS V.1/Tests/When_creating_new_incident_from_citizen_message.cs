@@ -1,12 +1,11 @@
 ﻿using System;
 using NUnit.Framework;
-using Rhino.Mocks;
 using Sufors.Common;
 
 namespace Tests
 {
     [TestFixture]
-    public class When_creating_new_citizen_report_from_citizen_message
+    public class When_creating_new_incident_from_citizen_message
     {
         Message _message;
         Incident _incedent;
@@ -18,9 +17,7 @@ namespace Tests
             _message.Id = 1;
             _message.TimeStamp = DateTime.Parse("6/1/09");
 
-            INotifier notifier = MockRepository.GenerateMock<INotifier>();
-            IncidentService service = new IncidentService(notifier);
-            _incedent = service.CreateIncidentFromMessage(_message);
+            _incedent = new Incident(_message, 1);
         }
 
         [Test]
@@ -33,6 +30,11 @@ namespace Tests
         public void Time_stamp_should_be_populated()
         {
             Assert.AreEqual(DateTime.Parse("6/1/09"), _incedent.TimeStamp);
+        }
+
+        public void RecorderId_should_be_populated()
+        {
+            Assert.AreEqual(12, _incedent.RecorderId);
         }
     }
 }
