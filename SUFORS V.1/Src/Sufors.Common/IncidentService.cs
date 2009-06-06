@@ -20,8 +20,7 @@ namespace Sufors.Common
 
         public void Save(Incident incident)
         {
-            if (incident.Flag == IncidentFlag.Urgent || 
-                incident.Flag == IncidentFlag.Crisis)
+            if (incident.ManagerNotificationRequired())
                 _notifier.NotifyManager(incident);
         }
     }
