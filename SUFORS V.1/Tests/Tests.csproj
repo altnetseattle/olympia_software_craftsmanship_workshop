@@ -53,14 +53,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="When_creating_new_incident_from_citizen_message.cs" />
-    <Compile Include="When_saving_a_new_incident.cs" />
-    <Compile Include="When_viewing_citizen_list.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="When_creating_a_new_incident_fom_a_message.cs" />
+    <Compile Include="When_saving_a_new_incident_flagged_urgent.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Src\Sufors.Common\Sufors.Common.csproj">
-      <Project>{5D082A32-3869-44B2-A004-EC044F8F9CB3}</Project>
+      <Project>{DCC0E47B-25AE-4AC9-B9F9-E09110C48C67}</Project>
       <Name>Sufors.Common</Name>
     </ProjectReference>
   </ItemGroup>
